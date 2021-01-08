@@ -67,12 +67,14 @@ def arp_scan_2():
     #print("Available devices in the network:")
     #print("IP" + " "*18+"MAC")
     #print(clients)
-    logging.basicConfig(filename='./logs/firewall.log', format='%(levelname)s %(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+    logging.basicConfig(filename='./logs/firewall.log', format='%(levelname)s %(asctime)s %(funcName)s '+HMI_ADDR+' '+HMI_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
     for client in clients:
         if client not in known_servers:
 
             print("possible attacker: ",client)
-            logging.warning("Unkown IP address in network: "+ client)
+            log="FIREWALL-WARNING: Unkown IP address in network: "+client
+            logging.warning(log)
+    time.sleep(30)
 	
-
-arp_scan_2()
+while True:
+    arp_scan_2()

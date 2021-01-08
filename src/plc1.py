@@ -10,7 +10,6 @@ from utils import TANK_M, BOTTLE_M, SENSOR2_THRESH
 import time
 import logging
 import os
-import errno
 from socket import error as socket_error
 
 # tag addresses
@@ -44,22 +43,22 @@ class FPPLC1(PLC):
         print
         # FYI: BSD-syslog format (RFC 3164), e.g. <133>Feb 25 14:09:07 webserver syslogd: restart   PRI <Facility*8+Severity>, HEADER (timestamp host), MSG (program/process message)
         
-        logging.basicConfig(filename='logs/plc1.log',format='%(levelname)s %(asctime)s ' + PLC1_ADDR + ' %(funcName)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s %(funcName)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
         # count = 0
         # while (count <= PLC_SAMPLES):
         
         while True:
-            """
+            
             if not os.path.exists('logs/plc1.log'):
-                filehandler = logging.FileHandler('logs/plc1.log', 'a')
-                log = logging.getLogger()  # root logger - Good to get it only once.
-                for hdlr in log.handlers[:]:  # remove the existing file handlers
-                    if isinstance(hdlr,logging.FileHandler): #fixed two typos here
-                        log.removeHandler(hdlr)
-                log.addHandler(filehandler)    
-
+                print("******************LOG FILE WAS DELETED")
+                print("******************LOG FILE WAS DELETED")
+                print("******************LOG FILE WAS DELETED")
+               
+                for handler in logging.root.handlers[:]:
+                    logging.root.removeHandler(handler)
+                logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s %(funcName)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
                 logging.warning("Log file was deleted, new file created.")
-            """
+            
             liquidlevel_tank = float(self.get(SENSOR1))   # physical process simulation (sensor 1 reads value)
             print 'DEBUG PLC1 - liquid level of tank (SENSOR 1): %.5f' % liquidlevel_tank
             self.send(SENSOR1, liquidlevel_tank, PLC1_ADDR) # network process simulation (value of sensor 1 is stored as enip tag)
@@ -89,10 +88,10 @@ class FPPLC1(PLC):
                     logging.info(
                         "Flow level (SENSOR 2) under SENSOR2_THRESH:  %.2f < %.2f -> leave mv status (ACTUATOR 1)." % (
                             flowlevel, SENSOR2_THRESH))
-            except timeout:
-                print("we got a socket error here")
+
             except:
                 logging.warning("Flow level (SENSOR 2) is not received. Program is unable to proceed properly")
+                
 
             # read from PLC3
             try:
@@ -117,6 +116,7 @@ class FPPLC1(PLC):
                     self.send(ACTUATOR1, 1, PLC1_ADDR)
             except:
                 logging.warning("Liquid level (SENSOR 3) is not received. Program is unable to proceed properly")
+               
 
             time.sleep(PLC_PERIOD_SEC)
             # count += 1

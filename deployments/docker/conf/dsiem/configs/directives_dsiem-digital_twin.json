@@ -1,8 +1,8 @@
 {
   "directives": [
     {
-      "id": 3013,
-      "name": "MITM Attack",
+      "id": 3015,
+      "name": "ARP-REQUEST",
       "priority": 3,
       "disabled": false,
       "all_rules_always_active": false,
@@ -10,11 +10,11 @@
       "category": "Denial of Service",
       "rules": [
         {
-          "name": "Liquid level (SENSOR 3) is not received. Program is unable to proceed properly",
+          "name": "ARP-REQUEST",
           "stage": 1,
           "plugin_id": 1008,
           "plugin_sid": [
-            6
+            14
           ],
           "occurrence": 1,
           "from": "ANY",
@@ -27,32 +27,60 @@
           "timeout": 0
         },
         {
-          "name": "Liquid level (SENSOR 3) is not received. Program is unable to proceed properly",
+          "name": "ARP-REQUEST",
           "stage": 2,
           "plugin_id": 1008,
           "plugin_sid": [
-            6
+            14
           ],
-          "occurrence": 2,
+          "occurrence": 1,
           "from": ":1",
           "to": ":1",
           "type": "PluginRule",
           "port_from": "ANY",
           "port_to": "ANY",
           "protocol": "ANY",
-          "reliability": 3,
+          "reliability": 8,
           "timeout": 60
-        },
+        }
+      ]
+    },
+      {
+      "id": 3016,
+      "name": "ICMP-REQUEST",
+      "priority": 3,
+      "disabled": false,
+      "all_rules_always_active": false,
+      "kingdom": "Exploitation & Installation",
+      "category": "Denial of Service",
+      "rules": [
         {
-          "name": "Internal ENIP tag (SENSOR 3) updated",
-          "stage": 3,
+          "name": "ICMP-REQUEST",
+          "stage": 1,
           "plugin_id": 1008,
           "plugin_sid": [
-            2
+            12
           ],
           "occurrence": 1,
           "from": "ANY",
           "to": "ANY",
+          "type": "PluginRule",
+          "port_from": "ANY",
+          "port_to": "ANY",
+          "protocol": "ANY",
+          "reliability": 2,
+          "timeout": 0
+        },
+        {
+          "name": "ICMP-REQUEST",
+          "stage": 2,
+          "plugin_id": 1008,
+          "plugin_sid": [
+            12
+          ],
+          "occurrence": 1,
+          "from": ":1",
+          "to": ":1",
           "type": "PluginRule",
           "port_from": "ANY",
           "port_to": "ANY",

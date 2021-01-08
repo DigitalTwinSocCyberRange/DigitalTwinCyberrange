@@ -33,8 +33,7 @@ class FPPLC3(PLC):
         print
         # FYI: BSD-syslog format (RFC 3164), e.g. <133>Feb 25 14:09:07 webserver syslogd: restart   PRI <Facility*8+Severity>, HEADER (timestamp host), MSG (program/process message)
         logging.basicConfig(filename='logs/plc3.log',
-                            format='%(levelname)s %(asctime)s ' + PLC3_ADDR + ' %(funcName)s %(message)s',
-                            datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+                            format='%(levelname)s %(asctime)s %(funcName)s '+PLC3_ADDR+' '+PLC3_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         # count = 0
         # while count <= PLC_SAMPLES:
