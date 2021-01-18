@@ -57,8 +57,9 @@ class FPPLC1(PLC):
                 for handler in logging.root.handlers[:]:
                     logging.root.removeHandler(handler)
                 logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s %(funcName)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
-                logging.warning("Log file was deleted, new file created.")
+                logging.warning("LOG FILE MANIPULATION: Log file was deleted, new file created.")
             
+            print("sensor: ", SENSOR1)
             liquidlevel_tank = float(self.get(SENSOR1))   # physical process simulation (sensor 1 reads value)
             print 'DEBUG PLC1 - liquid level of tank (SENSOR 1): %.5f' % liquidlevel_tank
             self.send(SENSOR1, liquidlevel_tank, PLC1_ADDR) # network process simulation (value of sensor 1 is stored as enip tag)

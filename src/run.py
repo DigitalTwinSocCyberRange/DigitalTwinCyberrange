@@ -24,7 +24,7 @@ class FPCPS(MiniCPS):
         net.pingAll()
 
         # start devices
-        plc1, plc2, plc3, s1, attacker, hmi = self.net.get('plc1', 'plc2', 'plc3', 's1', 'attacker', 'hmi')
+        plc1, plc2, plc3, s1, attacker, hmi = self.net.get('plc1', 'plc2', 'plc3', 's1',  'attacker', 'hmi')
 
         s1.cmd('screen -dmSL tank python physical_process.py')
         s1.cmd('screen -dmSL bottle python physical_process_bottle.py')
@@ -32,8 +32,8 @@ class FPCPS(MiniCPS):
         plc2.cmd('screen -dmSL plc2 python plc2.py')
         plc1.cmd('screen -dmSL plc1 python plc1.py')
         plc1.cmd('screen -dmSL plc1 python tcp_capture.py -Logfile')
-        plc1.cmd('screen -dmSL hmi python firewall.py -Logfile')
-        #attacker.cmd('screen -dmSL attacker bash rm_attack.sh -Logfile')
+        hmi.cmd('screen -dmSL hmi python firewall.py -Logfile')
+        attacker.cmd('screen -dmSL attacker bash rm_attack.sh -Logfile')
         attacker.cmd('screen -dmSL attacker bash dos.sh -Logfile')
         attacker.cmd('screen -dmSL attacker bash attack.sh')
 

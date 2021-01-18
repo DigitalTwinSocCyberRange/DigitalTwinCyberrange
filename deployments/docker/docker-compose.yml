@@ -47,7 +47,7 @@ services:
 
   dsiem:
     container_name: dsiem
-    image: defenxor/dsiem:latest
+    build: ../../dsiem/deployments/docker/build
     ports:
       - "8080:8080"
     networks:
@@ -86,7 +86,7 @@ services:
       - dsiem-log:/var/log/dsiem
 
   digital_twin:
-    image: antumin/digital-twin:first
+    build: ../../build/digital_twin
     container_name: digital_twin
     privileged: true
     network_mode: "host"

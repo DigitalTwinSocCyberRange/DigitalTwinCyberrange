@@ -39,9 +39,10 @@ class FPTopo(Topo):
             ip=HMI_ADDR + NETMASK,
             mac=HMI_MAC)
         self.addLink(hmi, switch)
-
+        
         attacker = self.addHost(
             'attacker',
             ip=ATTCKR_ADDR + NETMASK,
             mac=ATTCKR_MAC)
         self.addLink(attacker, switch)
+        

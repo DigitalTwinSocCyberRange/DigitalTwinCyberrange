@@ -1,0 +1,24 @@
+version: "3"
+services:
+
+    dsiem:
+        container_name: dsiem
+        build: ../../dsiem/deployments/docker/build
+        ports:
+          - "8080:8080"
+        networks:
+          - siemnet
+        volumes:
+          - dsiem-log:/dsiem/logs
+          - ./conf/dsiem/configs:/dsiem/configs
+        environment:
+          - DSIEM_WEB_ESURL=http://$HOST_IP:9200
+          - DSIEM_WEB_KBNURL=http://$HOST_IP:5601
+
+    
+volumes:
+  digital-twin-log:
+  dsiem-log:
+
+networks:
+  siemnet:

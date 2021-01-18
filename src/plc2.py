@@ -41,6 +41,7 @@ class FPPLC2(PLC):
         while True:
             # physical process
             flowlevel = float(self.get(SENSOR2))
+            print(SENSOR2)
            # print "PLC2 - get flowlevel (SENSOR 2): %f" % flowlevel
 
             # network capabilities
