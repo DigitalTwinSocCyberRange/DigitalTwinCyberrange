@@ -25,8 +25,9 @@
           "port_to": "ANY",
           "protocol": "ANY",
           "reliability": 2,
-          "timeout": 0
+          "timeout": 60
         },
+          
         {
           "name": "Liquid level (SENSOR 3) is not received. Program is unable to proceed properly",
           "stage": 2,
@@ -35,13 +36,13 @@
             6
           ],
           "occurrence": 2,
-          "from": ":1",
-          "to": ":1",
+          "from": "ANY",
+          "to": "ANY",
           "type": "PluginRule",
           "port_from": "ANY",
           "port_to": "ANY",
           "protocol": "ANY",
-          "reliability": 3,
+          "reliability": 2,
           "timeout": 60
         },
         {

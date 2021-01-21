@@ -8,7 +8,7 @@ known_mac_adresses={}
 #sniff(offline="tcpdump.pcap", prn=check_mitm(), filter='tcp or udp')
 #pkts = sniff(offline="tcpdump.pcap",prn = check_mitm())
 
-logging.basicConfig(filename='logs/tcpdump.log',format='%(levelname)s %(asctime)s %(funcName)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+logging.basicConfig(filename='logs/tcpdump.log',format='%(levelname)s %(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
 def check_arp_spoof(pkt):
     global known_mac_adresses

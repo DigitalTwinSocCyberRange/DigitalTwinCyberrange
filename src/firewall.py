@@ -29,7 +29,7 @@ def arp_scan():
 
     for sent, received in result:
         clients.append(received.psrc)
-        logging.basicConfig(filename='logs/firewall.log',format='%(levelname)s %(asctime)s %(funcName)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='logs/firewall.log',format='%(levelname)s %(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
     HMI_ADDR+' '+HMI_ADDR+' %(message)s',
     for client in clients:
         if client not in known_servers:

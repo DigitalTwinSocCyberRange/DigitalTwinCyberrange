@@ -43,7 +43,7 @@ class FPPLC1(PLC):
         print
         # FYI: BSD-syslog format (RFC 3164), e.g. <133>Feb 25 14:09:07 webserver syslogd: restart   PRI <Facility*8+Severity>, HEADER (timestamp host), MSG (program/process message)
         
-        logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s %(funcName)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
         # count = 0
         # while (count <= PLC_SAMPLES):
         
@@ -56,7 +56,7 @@ class FPPLC1(PLC):
                
                 for handler in logging.root.handlers[:]:
                     logging.root.removeHandler(handler)
-                logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s %(funcName)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+                logging.basicConfig(filename='logs/plc1.log', format='%(levelname)s %(asctime)s '+PLC1_ADDR+' '+PLC1_ADDR+' %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
                 logging.warning("LOG FILE MANIPULATION: Log file was deleted, new file created.")
             
             print("sensor: ", SENSOR1)

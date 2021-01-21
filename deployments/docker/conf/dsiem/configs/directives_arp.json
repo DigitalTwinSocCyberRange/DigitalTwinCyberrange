@@ -2,7 +2,7 @@
   "directives": [
      
      {
-      "id": 3,
+      "id": 6,
       "name": "Arp-Spoof Attack",
       "priority": 5,
       "disabled": false,
@@ -10,12 +10,12 @@
       "kingdom": "Exploitation & Installation",
       "category": "Arp-Spoof",
       "rules": [
-        {
-          "name": "FIREWALL-WARNING",
+          {
+          "name": "ARP-REPLY",
           "stage": 1,
           "plugin_id": 1008,
           "plugin_sid": [
-            9
+            14
           ],
           "occurrence": 1,
           "from": "ANY",
@@ -24,18 +24,18 @@
           "port_from": "ANY",
           "port_to": "ANY",
           "protocol": "ANY",
-          "reliability": 1,
+          "reliability": 5,
           "timeout": 0
         },
           {
-          "name": "ARP-REQUEST",
+          "name": "ARP-REPLY",
           "stage": 2,
           "plugin_id": 1008,
           "plugin_sid": [
-            10
+            14
           ],
-          "occurrence": 1,
-          "from": "ANY",
+          "occurrence": 4,
+          "from": ":1",
           "to": "ANY",
           "type": "PluginRule",
           "port_from": "ANY",
@@ -52,7 +52,7 @@
             10
           ],
           "occurrence": 1,
-          "from": "ANY",
+          "from": ":1",
           "to": "ANY",
           "type": "PluginRule",
           "port_from": "ANY",
