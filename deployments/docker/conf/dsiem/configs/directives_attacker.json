@@ -2,7 +2,7 @@
   "directives": [
       {
       "id": 1,
-      "name": "ATTACKER",
+      "name": "Unkown IP in network",
       "priority": 3,
       "disabled": false,
       "all_rules_always_active": false,

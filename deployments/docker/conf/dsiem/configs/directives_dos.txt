@@ -34,7 +34,7 @@
           "plugin_sid": [
             11
           ],
-          "occurrence": 2000,
+          "occurrence": 1000,
           "from": "ANY",
           "to": ":1",
           "type": "PluginRule",
