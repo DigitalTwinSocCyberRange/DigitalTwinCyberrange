@@ -9,4 +9,21 @@ oflops/
 oftest/
 openflow/
 pox/
+dsiem_backup/
+dsiem/docs/mkdocs
+dsiem/docs/TODO.md
+dsiem/docs/wiki
+
+dsiem/web/ui-internal
+dsiem/web/dist
+dsiem/web/ui/dist
+dsiem/web/ui/src/environments/version.ts
+
+
+dsiem/temp/
+dsiem/test/
+dsiem/test/pprof_results
+dsiem/dsiem_config.json
+dsiem/logs
+dsiem/.vscode/
 
