@@ -1,0 +1,112 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.5)" size="large" color="#fff" type="ball-clip-rotate-pulse"></ngx-spinner>
+<app-alert-box></app-alert-box>
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Alarm List
+        </div>
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar progress-bar-striped"
+            [ngClass]="{ 'progress-bar-animated bg-info': animateProgress, 'bg-secondary': !animateProgress }"
+            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+          </div>
+        </div>
+        <div class="card-body">
+          <button type="button" [disabled]="disabledBtn" class="btn btn-primary text-right"
+            [ngClass]="{ 'bg-dark': counterPaused }" (click)="counterClick()" placement="top">{{counterPreText}}
+            <countdown #counter [config]="{leftTime: 10, template: '$!s!'}" (start)="counterStart()"
+              (finished)="counterFinished()"></countdown>
+            {{counterPostText}}
+          </button>
+          <div class="btn-group float-right" data-toggle="buttons">
+            <label class="btn active" tooltip="Auto-refresh returns this many documents at once">
+              <input type="radio" [disabled]="disabledBtn" [(ngModel)]="totalItems" [value]="20"> 20</label>
+            <label class="btn" tooltip="Auto-refresh returns this many documents at once"><input type="radio"
+                [disabled]="disabledBtn" [(ngModel)]="totalItems" [value]="50">
+              50</label>
+            <label class="btn" tooltip="Auto-refresh returns this many documents at once"><input type="radio"
+                [disabled]="disabledBtn" [(ngModel)]="totalItems" [value]="100">
+              100</label>
+            <label class="btn" tooltip="Auto-refresh returns this many documents at once"><input type="radio"
+                [disabled]="disabledBtn" [(ngModel)]="totalItems" [value]="200">
+              200</label>
+          </div>
+          <app-search-box (ready)="onSearchboxReady()" (empty)="onSearchboxEmpty()"></app-search-box>
+          <div bsModal #confirmModalRemove="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="myBasicModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Warning</h4>
+                  <button type="button" class="close" aria-label="Close" (click)="confirmModalRemove.hide()">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  You are about to remove alarm with ID: <b>{{alarmIdToRemove}}</b>
+                  <br>
+                  Do you want to continue?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" aria-label="Close"
+                    (click)="deleteAlarm()">Yes</button>
+                  <button type="button" class="btn btn-primary" aria-label="Close"
+                    (click)="confirmModalRemove.hide()">No</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Action</th>
+                  <th>Alarm ID</th>
+                  <th>Title</th>
+                  <th>Created</th>
+                  <th>Updated</th>
+                  <th>Status</th>
+                  <th>Risk</th>
+                  <th>Tag</th>
+                  <th>Sources</th>
+                  <th>Destinations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let alarm of tableData; let i=index">
+                  <td>
+                    <a tooltip="Click to see alarm details" placement="bottom" style="cursor:pointer; color: #000000"
+                      [routerLink]="['/data/alarm-detail', alarm.id]">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    &nbsp;
+                    <a tooltip="Click to remove this row" placement="bottom" style="cursor:pointer; color: red"
+                      (click)="confirmBeforeRemove(alarm.id, i)">
+                      <i class="fa fa-trash"></i>
+                    </a>
+                  </td>
+                  <td>{{alarm.id}}</td>
+                  <td>{{alarm.title}}</td>
+                  <td>{{alarm.timestamp | amTimeAgo}}</td>
+                  <td>{{alarm.updated_time | amTimeAgo}}</td>
+                  <td>{{alarm.status}}</td>
+                  <td>{{alarm.risk_class}}</td>
+                  <td>{{alarm.tag}}</td>
+                  <td>{{alarm.src_ips}}</td>
+                  <td>
+                    <div *ngFor="let d of alarm.dst_ips">
+                      <span>{{d}}</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <label *ngIf="tableData.length==0">No records found.</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
