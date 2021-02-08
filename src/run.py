@@ -33,6 +33,7 @@ class FPCPS(MiniCPS):
         plc1.cmd('screen -dmSL plc1 python plc1.py')
         plc1.cmd('screen -dmSL plc1 python tcp_capture.py -Logfile')
         hmi.cmd('screen -dmSL hmi python firewall.py -Logfile')
+        hmi.cmd('screen -dmSL hmi python ./pyrest/api.py -Logfile')
         attacker.cmd('screen -dmSL attacker bash rm_attack.sh -Logfile')
         attacker.cmd('screen -dmSL attacker bash dos_attack.sh -Logfile')
         attacker.cmd('screen -dmSL attacker bash mitm_attack.sh')

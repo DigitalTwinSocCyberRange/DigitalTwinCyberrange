@@ -1,0 +1,54 @@
+docs/mkdocs
+docs/TODO.md
+docs/wiki
+
+web/ui-internal
+web/dist
+web/ui/dist
+web/ui/src/environments/version.ts
+
+
+temp/
+test/
+test/pprof_results
+dsiem_config.json
+logs
+.vscode/
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+# Unignore docker builds
+!deployments/docker/build/Dockerfile
+!deployments/docker/build/s6files/services.d/dsiem/run
+!deployments/docker/build/s6files/cont-init.d/00_seed_configs
+!demo/frontend/*
+!demo/vagrant/*/*
+
+node_modules/
+# alienvault rules
+*.tsv
+user.xml
+user.xml.tmp
+
+docs/mkdocs
+docs/TODO.md
+docs/wiki
+
+web/ui-internal
+web/dist
+web/ui/dist
+web/ui/src/environments/version.ts
+
+
+temp/
+test/
+test/pprof_results
+dsiem_config.json
+logs
+.vscode/
+
+# include the demo app vscode
+!demo/frontend/web/.vscode/
