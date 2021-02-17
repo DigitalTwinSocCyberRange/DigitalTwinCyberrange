@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Filebeat AWS VPC Flow Log Overview Dashboard", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+                }, 
+                "optionsJSON": "{\"useMargins\": true, \"hidePanelTitles\": false}", 
+                "panelsJSON": "[{\"gridData\": {\"i\": \"c802177f-038c-4a35-a82d-0fa42c857d02\", \"h\": 5, \"y\": 0, \"w\": 18, \"x\": 0}, \"title\": \"S3 Bucket Filter\", \"embeddableConfig\": {\"title\": \"S3 Bucket Filter\"}, \"version\": \"7.4.0\", \"panelRefName\": \"panel_0\", \"panelIndex\": \"c802177f-038c-4a35-a82d-0fa42c857d02\"}, {\"gridData\": {\"i\": \"380eed85-225b-4d5d-88bc-1c70a3643ddb\", \"h\": 17, \"y\": 0, \"w\": 30, \"x\": 18}, \"title\": \"VPC Flow Action Geo Location\", \"embeddableConfig\": {\"mapCenter\": {\"lat\": 12.09237, \"lon\": 60.11722, \"zoom\": 0.47}, \"openTOCDetails\": [], \"isLayerTOCOpen\": true, \"title\": \"VPC Flow Action Geo Location\"}, \"version\": \"7.4.0\", \"panelRefName\": \"panel_1\", \"panelIndex\": \"380eed85-225b-4d5d-88bc-1c70a3643ddb\"}, {\"gridData\": {\"i\": \"3dde08df-2d7e-464e-825d-03179e43e175\", \"h\": 12, \"y\": 5, \"w\": 18, \"x\": 0}, \"title\": \"VPC Flow Top IP Addresses\", \"embeddableConfig\": {\"title\": \"VPC Flow Top IP Addresses\"}, \"version\": \"7.4.0\", \"panelRefName\": \"panel_2\", \"panelIndex\": \"3dde08df-2d7e-464e-825d-03179e43e175\"}, {\"gridData\": {\"i\": \"f7c6de04-c771-47ff-a32d-00a7940e414a\", \"h\": 12, \"y\": 17, \"w\": 48, \"x\": 0}, \"title\": \"VPC Flow Total Requests\", \"embeddableConfig\": {\"title\": \"VPC Flow Total Requests\"}, \"version\": \"7.4.0\", \"panelRefName\": \"panel_3\", \"panelIndex\": \"f7c6de04-c771-47ff-a32d-00a7940e414a\"}, {\"gridData\": {\"i\": \"b4dbbe72-0dc0-428b-b21e-91c6cc82745c\", \"h\": 15, \"y\": 29, \"w\": 48, \"x\": 0}, \"title\": \"VPC Flow Reject Logs\", \"embeddableConfig\": {\"title\": \"VPC Flow Reject Logs\"}, \"version\": \"7.4.0\", \"panelRefName\": \"panel_4\", \"panelIndex\": \"b4dbbe72-0dc0-428b-b21e-91c6cc82745c\"}]", 
+                "timeRestore": false, 
+                "title": "[Filebeat AWS] VPC Flow Log Overview", 
+                "version": 1
+            }, 
+            "id": "15503340-4488-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            }, 
+            "references": [
+                {
+                    "id": "247e2990-4699-11ea-ad63-791a5dc86f10", 
+                    "name": "panel_0", 
+                    "type": "visualization"
+                }, 
+                {
+                    "id": "513a3d70-4482-11ea-ad63-791a5dc86f10", 
+                    "name": "panel_1", 
+                    "type": "map"
+                }, 
+                {
+                    "id": "75853f20-4484-11ea-ad63-791a5dc86f10", 
+                    "name": "panel_2", 
+                    "type": "visualization"
+                }, 
+                {
+                    "id": "bad8c910-4485-11ea-ad63-791a5dc86f10", 
+                    "name": "panel_3", 
+                    "type": "visualization"
+                }, 
+                {
+                    "id": "c1aee600-4487-11ea-ad63-791a5dc86f10", 
+                    "name": "panel_4", 
+                    "type": "search"
+                }
+            ], 
+            "type": "dashboard", 
+            "updated_at": "2020-02-03T16:45:00.909Z", 
+            "version": "WzY3NDIsMV0="
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+                }, 
+                "title": "S3 Bucket Name Filter [Filebeat AWS]", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"input_control_vis\", \"params\": {\"pinFilters\": false, \"useTimeFilter\": true, \"updateFiltersOnChange\": true, \"controls\": [{\"parent\": \"\", \"indexPatternRefName\": \"control_0_index_pattern\", \"label\": \"S3 Bucket Names\", \"fieldName\": \"aws.s3.bucket.name\", \"id\": \"1565034367477\", \"type\": \"list\", \"options\": {\"type\": \"terms\", \"size\": 5, \"multiselect\": true, \"dynamicOptions\": true, \"order\": \"desc\"}}]}, \"aggs\": [], \"title\": \"S3 Bucket Name Filter [Filebeat AWS]\"}"
+            }, 
+            "id": "247e2990-4699-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            }, 
+            "references": [
+                {
+                    "id": "filebeat-*", 
+                    "name": "control_0_index_pattern", 
+                    "type": "index-pattern"
+                }
+            ], 
+            "type": "visualization", 
+            "updated_at": "2020-02-03T16:42:58.806Z", 
+            "version": "WzYzNzUsMV0="
+        }, 
+        {
+            "attributes": {
+                "bounds": {
+                    "coordinates": [
+                        [
+                            [
+                                -180, 
+                                85.05113
+                            ], 
+                            [
+                                -180, 
+                                -85.05113
+                            ], 
+                            [
+                                180, 
+                                -85.05113
+                            ], 
+                            [
+                                180, 
+                                85.05113
+                            ], 
+                            [
+                                -180, 
+                                85.05113
+                            ]
+                        ]
+                    ], 
+                    "type": "Polygon"
+                }, 
+                "description": "", 
+                "layerListJSON": "[{\"sourceDescriptor\":{\"type\":\"EMS_TMS\",\"isAutoSelect\":true},\"id\":\"842c201e-96d7-413d-8688-de5ee4f8a1e0\",\"label\":null,\"minZoom\":0,\"maxZoom\":24,\"alpha\":1,\"visible\":true,\"applyGlobalQuery\":true,\"style\":{},\"type\":\"VECTOR_TILE\"},{\"sourceDescriptor\":{\"id\":\"97903038-e08d-4451-bbd2-eb92c894bdf5\",\"type\":\"ES_SEARCH\",\"geoField\":\"destination.geo.location\",\"filterByMapBounds\":true,\"tooltipProperties\":[],\"useTopHits\":false,\"topHitsTimeField\":\"@timestamp\",\"topHitsSize\":1,\"indexPatternRefName\":\"layer_1_source_index_pattern\"},\"style\":{\"type\":\"VECTOR\",\"properties\":{\"fillColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#1EA593\"}},\"lineColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#167a6d\"}},\"lineWidth\":{\"type\":\"STATIC\",\"options\":{\"size\":1}},\"iconSize\":{\"type\":\"STATIC\",\"options\":{\"size\":5}},\"iconOrientation\":{\"type\":\"STATIC\",\"options\":{\"orientation\":0}},\"symbol\":{\"options\":{\"symbolizeAs\":\"circle\",\"symbolId\":\"airfield\"}}}},\"id\":\"401944dd-a371-4698-be17-bc4542e9a5d4\",\"label\":\"vpc flow action accept\",\"minZoom\":0,\"maxZoom\":24,\"alpha\":0.75,\"visible\":true,\"applyGlobalQuery\":true,\"type\":\"VECTOR\",\"query\":{\"query\":\"aws.vpcflow.action : \\\"ACCEPT\\\" \",\"language\":\"kuery\"}},{\"sourceDescriptor\":{\"id\":\"9c0e7cce-4f21-4bcd-bb50-ae36c0fffffb\",\"type\":\"ES_SEARCH\",\"geoField\":\"source.geo.location\",\"filterByMapBounds\":true,\"tooltipProperties\":[],\"useTopHits\":false,\"topHitsTimeField\":\"@timestamp\",\"topHitsSize\":1,\"indexPatternRefName\":\"layer_2_source_index_pattern\"},\"style\":{\"type\":\"VECTOR\",\"properties\":{\"fillColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#f00f0b\"}},\"lineColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#7a1a18\"}},\"lineWidth\":{\"type\":\"STATIC\",\"options\":{\"size\":1}},\"iconSize\":{\"type\":\"STATIC\",\"options\":{\"size\":5}},\"iconOrientation\":{\"type\":\"STATIC\",\"options\":{\"orientation\":0}},\"symbol\":{\"options\":{\"symbolizeAs\":\"circle\",\"symbolId\":\"airfield\"}}}},\"id\":\"b1d44a5c-3a04-4c80-8080-57585b02fd48\",\"label\":\"vpc flow action reject\",\"minZoom\":0,\"maxZoom\":24,\"alpha\":0.75,\"visible\":true,\"applyGlobalQuery\":true,\"type\":\"VECTOR\",\"query\":{\"query\":\"aws.vpcflow.action : \\\"REJECT\\\" \",\"language\":\"kuery\"}}]", 
+                "mapStateJSON": "{\"zoom\":0.47,\"center\":{\"lon\":-108.92402,\"lat\":0},\"timeFilters\":{\"from\":\"now-15d\",\"to\":\"now\"},\"refreshConfig\":{\"isPaused\":false,\"interval\":0},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]}", 
+                "title": "VPC Flow Action Geo Location[Filebeat AWS]", 
+                "uiStateJSON": "{\"openTOCDetails\": [], \"isLayerTOCOpen\": false}"
+            }, 
+            "id": "513a3d70-4482-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "map": "7.4.0"
+            }, 
+            "references": [
+                {
+                    "id": "filebeat-*", 
+                    "name": "layer_1_source_index_pattern", 
+                    "type": "index-pattern"
+                }, 
+                {
+                    "id": "filebeat-*", 
+                    "name": "layer_2_source_index_pattern", 
+                    "type": "index-pattern"
+                }
+            ], 
+            "type": "map", 
+            "updated_at": "2020-02-03T16:42:58.806Z", 
+            "version": "WzYzNzYsMV0="
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+                }, 
+                "title": "VPC Flow Top IP Addresses [Filebeat AWS]", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"metrics\", \"params\": {\"default_index_pattern\": \"metricbeat-*\", \"gauge_inner_width\": 10, \"series\": [{\"line_width\": 1, \"terms_field\": \"source.ip\", \"metrics\": [{\"type\": \"count\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}, {\"field\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"type\": \"cumulative_sum\", \"id\": \"40c52370-3e87-11ea-9067-cf383a4ea3b3\"}], \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"series_index_pattern\": \"filebeat-*\", \"color\": \"rgba(115,216,255,1)\", \"stacked\": \"none\", \"color_rules\": [{\"id\": \"42e14220-3e86-11ea-9067-cf383a4ea3b3\"}], \"label\": \"IP address\", \"filter\": {\"query\": \"fileset.name : \\\"vpcflow\\\" \", \"language\": \"kuery\"}, \"separate_axis\": 0, \"override_index_pattern\": 1, \"chart_type\": \"line\", \"series_drop_last_bucket\": 0, \"type\": \"timeseries\", \"point_size\": 1, \"axis_position\": \"right\", \"formatter\": \"number\", \"split_mode\": \"terms\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"fill\": 0.5}], \"isModelInvalid\": false, \"show_legend\": 1, \"axis_position\": \"left\", \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"bar_color_rules\": [{\"id\": \"cc6d5070-3e85-11ea-9067-cf383a4ea3b3\"}], \"background_color_rules\": [{\"id\": \"29527130-3e86-11ea-9067-cf383a4ea3b3\"}], \"axis_formatter\": \"number\", \"index_pattern\": \"\", \"type\": \"top_n\", \"pivot_type\": \"string\", \"default_timefield\": \"@timestamp\", \"axis_min\": \"0\", \"show_grid\": 1, \"legend_position\": \"bottom\", \"axis_scale\": \"normal\", \"gauge_width\": 10, \"time_field\": \"\", \"interval\": \"\", \"gauge_color_rules\": [{\"id\": \"2b29c940-3e86-11ea-9067-cf383a4ea3b3\"}], \"pivot_id\": \"user_agent.original\", \"gauge_style\": \"half\"}, \"aggs\": [], \"title\": \"VPC Flow Top IP Addresses [Filebeat AWS]\"}"
+            }, 
+            "id": "75853f20-4484-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            }, 
+            "references": [], 
+            "type": "visualization", 
+            "updated_at": "2020-02-03T16:42:58.806Z", 
+            "version": "WzYzNzcsMV0="
+        }, 
+        {
+            "attributes": {
+                "description": "", 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [], \"query\": {\"query\": \"\", \"language\": \"kuery\"}}"
+                }, 
+                "title": "VPC Flow Total Requests [Filebeat AWS]", 
+                "uiStateJSON": "{}", 
+                "version": 1, 
+                "visState": "{\"type\": \"metrics\", \"params\": {\"default_index_pattern\": \"metricbeat-*\", \"type\": \"timeseries\", \"index_pattern\": \"\", \"default_timefield\": \"@timestamp\", \"series\": [{\"terms_field\": \"aws.vpcflow.action\", \"separate_axis\": 0, \"color\": \"rgba(211,49,21,1)\", \"chart_type\": \"line\", \"axis_position\": \"right\", \"id\": \"61ca57f1-469d-11e7-af02-69e470af7417\", \"split_color_mode\": \"rainbow\", \"fill\": \"0\", \"series_index_pattern\": \"filebeat-*\", \"label\": \"REJECT\", \"override_index_pattern\": 1, \"formatter\": \"number\", \"type\": \"timeseries\", \"point_size\": \"3\", \"metrics\": [{\"type\": \"count\", \"id\": \"61ca57f2-469d-11e7-af02-69e470af7417\"}], \"split_mode\": \"everything\", \"terms_order_by\": \"61ca57f2-469d-11e7-af02-69e470af7417\", \"line_width\": \"2\", \"stacked\": \"none\", \"filter\": {\"query\": \"fileset.name : \\\"vpcflow\\\" and aws.vpcflow.action : \\\"REJECT\\\" \", \"language\": \"kuery\"}, \"series_drop_last_bucket\": 0, \"series_time_field\": \"@timestamp\"}, {\"terms_field\": \"aws.vpcflow.action\", \"separate_axis\": 0, \"color\": \"rgba(104,188,0,1)\", \"chart_type\": \"line\", \"axis_position\": \"right\", \"id\": \"7ec99260-4485-11ea-9ee9-2d27e9149ae8\", \"split_color_mode\": \"rainbow\", \"fill\": \"0\", \"series_index_pattern\": \"filebeat-*\", \"label\": \"ACCEPT\", \"override_index_pattern\": 1, \"formatter\": \"number\", \"type\": \"timeseries\", \"point_size\": \"3\", \"metrics\": [{\"type\": \"count\", \"id\": \"7ec99261-4485-11ea-9ee9-2d27e9149ae8\"}], \"split_mode\": \"everything\", \"terms_order_by\": \"7ec99261-4485-11ea-9ee9-2d27e9149ae8\", \"line_width\": \"2\", \"stacked\": \"none\", \"filter\": {\"query\": \"fileset.name : \\\"vpcflow\\\" and aws.vpcflow.action : \\\"ACCEPT\\\"  \", \"language\": \"kuery\"}, \"series_drop_last_bucket\": 0, \"series_time_field\": \"@timestamp\"}, {\"terms_field\": \"aws.vpcflow.action\", \"separate_axis\": 0, \"color\": \"rgba(252,220,0,1)\", \"chart_type\": \"line\", \"axis_position\": \"right\", \"id\": \"8d550580-4485-11ea-9ee9-2d27e9149ae8\", \"split_color_mode\": \"rainbow\", \"fill\": \"0\", \"series_index_pattern\": \"filebeat-*\", \"label\": \"-\", \"override_index_pattern\": 1, \"formatter\": \"number\", \"type\": \"timeseries\", \"point_size\": \"3\", \"metrics\": [{\"type\": \"count\", \"id\": \"8d552c90-4485-11ea-9ee9-2d27e9149ae8\"}], \"split_mode\": \"everything\", \"terms_order_by\": \"8d552c90-4485-11ea-9ee9-2d27e9149ae8\", \"line_width\": \"2\", \"stacked\": \"none\", \"filter\": {\"query\": \"fileset.name : \\\"vpcflow\\\" and aws.vpcflow.action : \\\"-\\\" \", \"language\": \"kuery\"}, \"series_drop_last_bucket\": 0, \"series_time_field\": \"@timestamp\"}, {\"terms_field\": \"aws.vpcflow.action\", \"separate_axis\": 0, \"color\": \"rgba(115,216,255,1)\", \"chart_type\": \"line\", \"axis_position\": \"right\", \"id\": \"c8c27df0-4485-11ea-9ee9-2d27e9149ae8\", \"split_color_mode\": \"rainbow\", \"fill\": \"0.5\", \"series_index_pattern\": \"filebeat-*\", \"label\": \"Total Requests\", \"override_index_pattern\": 1, \"formatter\": \"number\", \"type\": \"timeseries\", \"point_size\": \"3\", \"metrics\": [{\"type\": \"count\", \"id\": \"c8c27df1-4485-11ea-9ee9-2d27e9149ae8\"}], \"split_mode\": \"everything\", \"terms_order_by\": \"c8c27df1-4485-11ea-9ee9-2d27e9149ae8\", \"line_width\": \"2\", \"stacked\": \"none\", \"filter\": {\"query\": \"fileset.name : \\\"vpcflow\\\"\", \"language\": \"kuery\"}, \"series_drop_last_bucket\": 0, \"series_time_field\": \"@timestamp\"}], \"axis_formatter\": \"number\", \"interval\": \"\", \"show_legend\": 1, \"isModelInvalid\": false, \"id\": \"61ca57f0-469d-11e7-af02-69e470af7417\", \"time_field\": \"\", \"axis_min\": \"0\", \"show_grid\": 1, \"legend_position\": \"right\", \"axis_scale\": \"normal\", \"background_color\": \"rgba(255,255,255,1)\", \"axis_position\": \"left\"}, \"aggs\": [], \"title\": \"VPC Flow Total Requests [Filebeat AWS]\"}"
+            }, 
+            "id": "bad8c910-4485-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "visualization": "7.3.1"
+            }, 
+            "references": [], 
+            "type": "visualization", 
+            "updated_at": "2020-02-03T16:42:58.806Z", 
+            "version": "WzYzNzgsMV0="
+        }, 
+        {
+            "attributes": {
+                "columns": [
+                    "source.ip", 
+                    "source.port", 
+                    "event.original"
+                ], 
+                "description": "", 
+                "hits": 0, 
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"filter\": [{\"query\": {\"match\": {\"fileset.name\": {\"query\": \"vpcflow\", \"type\": \"phrase\"}}}, \"meta\": {\"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"value\": \"vpcflow\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"vpcflow\"}, \"key\": \"fileset.name\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}, {\"query\": {\"match\": {\"aws.vpcflow.action\": {\"query\": \"REJECT\", \"type\": \"phrase\"}}}, \"meta\": {\"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index\", \"value\": \"REJECT\", \"disabled\": false, \"alias\": null, \"params\": {\"query\": \"REJECT\"}, \"key\": \"aws.vpcflow.action\", \"negate\": false, \"type\": \"phrase\"}, \"$state\": {\"store\": \"appState\"}}], \"query\": {\"query\": \"\", \"language\": \"kuery\"}, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\", \"version\": true, \"highlightAll\": true}"
+                }, 
+                "sort": [
+                    [
+                        "@timestamp", 
+                        "desc"
+                    ]
+                ], 
+                "title": "VPC Flow Reject Logs [Filebeat AWS]", 
+                "version": 1
+            }, 
+            "id": "c1aee600-4487-11ea-ad63-791a5dc86f10", 
+            "migrationVersion": {
+                "search": "7.4.0"
+            }, 
+            "references": [
+                {
+                    "id": "filebeat-*", 
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index", 
+                    "type": "index-pattern"
+                }, 
+                {
+                    "id": "filebeat-*", 
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index", 
+                    "type": "index-pattern"
+                }, 
+                {
+                    "id": "filebeat-*", 
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index", 
+                    "type": "index-pattern"
+                }
+            ], 
+            "type": "search", 
+            "updated_at": "2020-02-03T16:42:58.806Z", 
+            "version": "WzYzNzksMV0="
+        }
+    ], 
+    "version": "7.4.0"
+}
