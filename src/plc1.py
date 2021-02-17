@@ -27,7 +27,6 @@ class FPPLC1(PLC):
     # boot process
     def pre_loop(self, sleep=0.1):
         print 'DEBUG: FP PLC1 enters pre_loop'
-        print
 
         time.sleep(sleep)
 

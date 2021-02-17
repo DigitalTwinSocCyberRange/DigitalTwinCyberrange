@@ -7,8 +7,8 @@
       "priority": 5,
       "disabled": false,
       "all_rules_always_active": false,
-      "kingdom": "Exploitation & Installation",
-      "category": "Arp-Spoof",
+      "kingdom": "Attacks",
+      "category": "Spoofing",
       "rules": [
           {
           "name": "ARP-REPLY",
