@@ -1,9 +1,0 @@
-elasticsearch.hosts: ["https://es01:9200"]
-elasticsearch.ssl.certificateAuthorities: ["/usr/share/elasticsearch/config/certificates/es01/es01.crt"]
-elasticsearch.username: "kibana"
-elasticsearch.password: "changeme"
-elasticsearch.ssl.verificationMode: none
-xpack.security.encryptionKey: "something_at_least_32_characterssdfasdfasdfasdfsdfnzjh"
-xpack.encryptedSavedObjects.encryptionKey: 'fhjskloppd678ehkdfdlliverpoolfcr'
-server.host: "0.0.0.0"
-
