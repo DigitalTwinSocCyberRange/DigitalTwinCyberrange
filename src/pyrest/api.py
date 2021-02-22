@@ -9,14 +9,6 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route('/submit/<submit_data>', methods = ['POST'])
-@cross_origin()
-def submit(submit_data):
-    if (request.method == 'POST'):
-            f = open("trainee_data.txt", "a")
-            f.write(submit_data)
-            f.close()
-            return submit_data; # a multidict containing POST data
         
 @app.route('/deactivate_directives',methods=['GET'])
 @cross_origin()
@@ -34,7 +26,7 @@ def restart():
 @cross_origin()
 def compose():
     result_success = subprocess.check_output("bash stop_docker.sh", shell=True);
-    return "composed docker containers";
+    return "stopped docker containers";
 
 @app.route('/docker_restart',methods=['GET'])
 @cross_origin()
