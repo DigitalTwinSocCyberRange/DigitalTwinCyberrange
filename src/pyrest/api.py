@@ -8,6 +8,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+
 @app.route('/submit/<submit_data>', methods = ['POST'])
 @cross_origin()
 def submit(submit_data):
@@ -73,8 +74,10 @@ def arp():
 
 
 
+ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).rstrip();
+print ip_vm
 
 
-app.run(port=9090, host='192.168.2.158')
+app.run(port=9090, host=ip_vm)
 
-#access via http://192.168.2.158:9090/
+

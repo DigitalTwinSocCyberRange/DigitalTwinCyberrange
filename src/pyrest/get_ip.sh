@@ -1,0 +1,1 @@
+ip addr show enp1s0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
