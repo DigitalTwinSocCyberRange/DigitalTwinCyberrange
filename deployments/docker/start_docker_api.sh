@@ -1,4 +1,4 @@
-cd /root/DigitalTwin-Cyberrange/deployments/docker
+cd /root/DigitalTwinCyberrange/deployments/docker
 #restart docker containers
 pkill screen
 docker-compose stop 
