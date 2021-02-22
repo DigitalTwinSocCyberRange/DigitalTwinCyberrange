@@ -9,7 +9,7 @@ services:
       - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
       - cluster.routing.allocation.disk.threshold_enabled=false
       - ELASTIC_PASSWORD=cyberrange
-      - xpack.security.enabled=true
+      - xpack.security.enabled=false
       - xpack.security.transport.ssl.enabled=true
       - xpack.monitoring.enabled=false
       - xpack.ml.enabled=false
@@ -19,8 +19,8 @@ services:
       - http.cors.allow-origin=*
       - http.cors.allow-credentials=true
       - http.cors.allow-headers=Authorization,X-Requested-With,Content-Type,Content-Length
-    ports:
-      - 9888:9200
+    expose:
+      - 9200
     networks:
       - siemnet
     volumes:
@@ -44,8 +44,7 @@ services:
     image: docker.elastic.co/kibana/kibana:7.6.1
     environment:
       - XPACK_MONITORING_ENABLED=false
-      - ELASTICSEARCH_USERNAME=elastic
-      - ELASTICSEARCH_PASSWORD=cyberrange
+
     links:
       - elasticsearch
     ports:
@@ -64,7 +63,7 @@ services:
       - dsiem-log:/dsiem/logs
       - ./conf/dsiem/configs:/dsiem/configs
     environment:
-      - DSIEM_WEB_ESURL=http://elastic:cyberrange@$HOST_IP:9888
+      - DSIEM_WEB_ESURL=http://elastic:cyberrange@$HOST_IP:9200
       - DSIEM_WEB_KBNURL=http://$HOST_IP:5601
 
   filebeat:
