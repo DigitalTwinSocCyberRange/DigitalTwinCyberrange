@@ -19,13 +19,13 @@ def deactivate():
 @app.route('/restart_dt',methods=['GET'])
 @cross_origin()
 def restart():
-    result_success = subprocess.check_output("bash restart_dt.sh", shell=True);
+    result_success = subprocess.check_output("bash restart_dt.sh &>/dev/null", shell=True);
     return "restarted dt";
 
 @app.route('/docker_stop',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash docker_stop.sh", shell=True);
+    result_success = subprocess.check_output("bash docker_stop.sh &>/dev/null", shell=True);
     return "stopped docker containers";
 
 @app.route('/docker_restart',methods=['GET'])

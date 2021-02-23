@@ -8,6 +8,7 @@ oflops/
 oftest/
 openflow/
 pox/
+*.sqlite
 dsiem_backup/
 dsiem/docs/mkdocs
 dsiem/docs/TODO.md

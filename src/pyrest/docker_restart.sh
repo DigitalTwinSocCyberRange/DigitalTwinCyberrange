@@ -1,3 +1,2 @@
 cd ../../deployments/docker
-docker-compose stop
-docker-compose up 
+bash start_docker_api.sh
