@@ -29,8 +29,8 @@ class FPCPS(MiniCPS):
         
         s1.cmd('screen -dmSL tank python physical_process.py')
         s1.cmd('screen -dmSL bottle python physical_process_bottle.py')
-        plc3.cmd('screen -dmSL plc3 python plc3.py')
-        plc2.cmd('screen -dmSL plc2 python plc2.py')
+        plc3.cmd('screen -dmSL plc3 bash plc3_loop.sh')
+        plc2.cmd('screen -dmSL plc2 bash plc2_loop.sh')
         plc1.cmd('screen -dmSL plc1 bash plc1_loop.sh')
         plc1.cmd('screen -dmSL plc1 python tcp_capture.py -Logfile')
         hmi.cmd('screen -dmSL hmi python firewall.py -Logfile')
