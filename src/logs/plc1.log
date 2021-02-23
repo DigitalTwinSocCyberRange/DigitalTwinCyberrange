@@ -1,0 +1,5 @@
+WARNING 02/23/2021 12:39:35 10.0.0.1 10.0.0.1 LOG FILE MANIPULATION: Log file was deleted, new file created.
+WARNING 02/23/2021 12:39:35 10.0.0.1 10.0.0.1 Flow level (SENSOR 2) is not received. Program is unable to proceed properly
+WARNING 02/23/2021 12:39:35 10.0.0.1 10.0.0.1 Liquid level (SENSOR 3) is not received. Program is unable to proceed properly
+WARNING 02/23/2021 12:39:36 10.0.0.1 10.0.0.1 Flow level (SENSOR 2) is not received. Program is unable to proceed properly
+WARNING 02/23/2021 12:39:37 10.0.0.1 10.0.0.1 Liquid level (SENSOR 3) is not received. Program is unable to proceed properly

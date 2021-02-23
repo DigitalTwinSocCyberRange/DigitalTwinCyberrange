@@ -1,481 +1,301 @@
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos.txt': No such file or directory
-Error response from daemon: No such container: dsiem
-Error response from daemon: No such container: digital_twin
-[2021-02-11 10:25:27,846] ERROR in app: Exception on /dos [GET]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
-    resp = make_response(f(*args, **kwargs))
-  File "api.py", line 41, in dos
-    result_success = subprocess.check_output("bash activate_directive.sh dos", shell=True)
-  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-CalledProcessError: Command 'bash activate_directive.sh dos' returned non-zero exit status 1
-10.10.2.10 - - [11/Feb/2021 10:25:27] "[35m[1mGET /dos HTTP/1.1[0m" 500 -
-mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos.txt': No such file or directory
-Error response from daemon: No such container: dsiem
-Error response from daemon: No such container: digital_twin
-[2021-02-11 10:25:32,800] ERROR in app: Exception on /dos [GET]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
-    resp = make_response(f(*args, **kwargs))
-  File "api.py", line 41, in dos
-    result_success = subprocess.check_output("bash activate_directive.sh dos", shell=True)
-  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-CalledProcessError: Command 'bash activate_directive.sh dos' returned non-zero exit status 1
-10.10.2.10 - - [11/Feb/2021 10:25:32] "[35m[1mGET /dos HTTP/1.1[0m" 500 -
-mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos.txt': No such file or directory
-Error response from daemon: No such container: dsiem
-Error response from daemon: No such container: digital_twin
-[2021-02-11 10:26:02,622] ERROR in app: Exception on /dos [GET]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
-    resp = make_response(f(*args, **kwargs))
-  File "api.py", line 41, in dos
-    result_success = subprocess.check_output("bash activate_directive.sh dos", shell=True)
-  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-CalledProcessError: Command 'bash activate_directive.sh dos' returned non-zero exit status 1
-10.10.2.10 - - [11/Feb/2021 10:26:02] "[35m[1mGET /dos HTTP/1.1[0m" 500 -
-mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos.txt': No such file or directory
-Error response from daemon: No such container: dsiem
-Error response from daemon: No such container: digital_twin
-[2021-02-11 10:26:03,941] ERROR in app: Exception on /dos [GET]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
-    resp = make_response(f(*args, **kwargs))
-  File "api.py", line 41, in dos
-    result_success = subprocess.check_output("bash activate_directive.sh dos", shell=True)
-  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-CalledProcessError: Command 'bash activate_directive.sh dos' returned non-zero exit status 1
-10.10.2.10 - - [11/Feb/2021 10:26:03] "[35m[1mGET /dos HTTP/1.1[0m" 500 -
-^[[B^[[A        ^C * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.10 - - [11/Feb/2021 10:28:55] "[37mGET /attacker HTTP/1.1[0m" 200 -
-^Cpython: can't open file './pyrest/api.py': [Errno 2] No such file or directory
-python: can't open file './pyrest/api.py': [Errno 2] No such file or directory
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.10 - - [17/Feb/2021 07:44:51] "[33mGET / HTTP/1.1[0m" 404 -
-10.10.2.10 - - [17/Feb/2021 07:45:11] "[37mGET /dos HTTP/1.1[0m" 200 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
-Traceback (most recent call last):
-  File "api.py", line 60, in <module>
-    app.run(port=9090, host='192.168.2.158')
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
-Traceback (most recent call last):
-  File "api.py", line 60, in <module>
-    app.run(port=9090, host='192.168.2.158')
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
-Traceback (most recent call last):
-  File "api.py", line 60, in <module>
-    app.run(port=9090, host='192.168.2.158')
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
-10.10.2.10 - - [17/Feb/2021 07:52:36] "[33mGET / HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
-Traceback (most recent call last):
-  File "api.py", line 60, in <module>
-    app.run(port=9090, host='192.168.2.158')
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
-Traceback (most recent call last):
-  File "api.py", line 60, in <module>
-    app.run(port=9090, host='192.168.2.158')
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
-10.10.2.10 - - [17/Feb/2021 09:28:34] "[33mGET / HTTP/1.1[0m" 404 -
-10.10.2.10 - - [17/Feb/2021 13:22:44] "[33mGET / HTTP/1.1[0m" 404 -
-10.10.2.10 - - [17/Feb/2021 13:23:54] "[33mGET / HTTP/1.1[0m" 404 -
-10.10.2.10 - - [17/Feb/2021 13:23:55] "[33mGET / HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.10 - - [17/Feb/2021 13:31:32] "[37mGET /restart HTTP/1.1[0m" 200 -
-10.10.2.10 - - [17/Feb/2021 13:31:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.10 - - [17/Feb/2021 13:35:48] "[33mGET / HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.10 - - [18/Feb/2021 08:16:33] "[33mGET /docker HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-bash: restart: No such file or directory
-[2021-02-18 08:18:04,869] ERROR in app: Exception on /docker [GET]
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
-    resp = make_response(f(*args, **kwargs))
-  File "api.py", line 29, in docker
-    result_success = subprocess.check_output("bash restart docker.sh", shell=True)
-  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
-    raise CalledProcessError(retcode, cmd, output=output)
-CalledProcessError: Command 'bash restart docker.sh' returned non-zero exit status 127
-10.10.2.10 - - [18/Feb/2021 08:18:05] "[35m[1mGET /docker HTTP/1.1[0m" 500 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [20/Feb/2021 21:17:03] "[37mGET /dos HTTP/1.1[0m" 200 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [22/Feb/2021 07:38:51] "[37mGET /restart HTTP/1.1[0m" 200 -
-10.10.2.14 - - [22/Feb/2021 07:40:10] "[37mGET /restart HTTP/1.1[0m" 200 -
-10.10.2.14 - - [22/Feb/2021 07:41:28] "[37mGET /restart HTTP/1.1[0m" 200 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [22/Feb/2021 09:21:15] "[37mGET /restart HTTP/1.1[0m" 200 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [22/Feb/2021 11:14:46] "[33mGET / HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 11:15:01] "[33mGET /restart HTTP/1.1[0m" 404 -
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 10:41:30] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
 192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
  * Serving Flask app "api" (lazy loading)
  * Environment: production
 [31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [22/Feb/2021 19:14:16] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:15:23] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:15:39] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:18:01] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:18:20] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:20:13] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [23/Feb/2021 10:43:38] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
 192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
  * Serving Flask app "api" (lazy loading)
  * Environment: production
 [31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 10:44:30] "[33mGET / HTTP/1.1[0m" 404 -
+10.10.2.14 - - [23/Feb/2021 10:44:35] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+/bin/sh: 1: reboot: not found
+[2021-02-23 10:44:49,945] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("reboot", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'reboot' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 10:44:49] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+/bin/sh: 1: reboot: not found
+[2021-02-23 10:46:19,601] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("reboot", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'reboot' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 10:46:19] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
 192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
  * Serving Flask app "api" (lazy loading)
  * Environment: production
 [31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [22/Feb/2021 19:35:55] "[33mGET /restart HTTP/1.1[0m" 404 -
-10.10.2.14 - - [22/Feb/2021 19:41:59] "[33mGET /restart HTTP/1.1[0m" 404 -
-192.168.2.158
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [23/Feb/2021 07:17:54] "[33mGET / HTTP/1.1[0m" 404 -
 Stopping kibana        ... 
+Stopping elasticsearch ... 
 Stopping digital_twin  ... 
 Stopping filebeat-es   ... 
 Stopping logstash      ... 
-Stopping elasticsearch ... 
 Stopping dsiem         ... 
 Stopping filebeat      ... 
-[5A[2KStopping filebeat-es   ... [32mdone[0m[5B[7A[2KStopping kibana        ... [32mdone[0m[7B[3A[2KStopping elasticsearch ... [32mdone[0m[3B[2A[2KStopping dsiem         ... [32mdone[0m[2B[4A[2KStopping logstash      ... [32mdone[0m[4B[6A[2KStopping digital_twin  ... [32mdone[0m[6B[1A[2KStopping filebeat      ... [32mdone[0m[1B10.10.2.14 - - [23/Feb/2021 07:20:31] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+[4A[2KStopping filebeat-es   ... [32mdone[0m[4B[3A[2KStopping logstash      ... [32mdone[0m[3B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[2A[2KStopping dsiem         ... [32mdone[0m[2B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[1A[2KStopping filebeat      ... [32mdone[0m[1B10.10.2.14 - - [23/Feb/2021 10:58:56] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
 192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
  * Serving Flask app "api" (lazy loading)
  * Environment: production
 [31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-10.10.2.14 - - [23/Feb/2021 07:23:56] "[33mGET /restart HTTP/1.1[0m" 404 -
-192.168.2.158
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
- * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
-192.168.2.158
- * Serving Flask app "api" (lazy loading)
- * Environment: production
-[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
-[2m   Use a production WSGI server instead.[0m
- * Debug mode: off
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+Stopping filebeat      ... 
+[4A[2KStopping filebeat-es   ... [32mdone[0m[4B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[2A[2KStopping dsiem         ... [32mdone[0m[2B[3A[2KStopping logstash      ... [32mdone[0m[3B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[1A[2KStopping filebeat      ... [32mdone[0m[1B10.10.2.14 - - [23/Feb/2021 11:00:56] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+reboot.sh: line 1: reboot: command not found
+[2021-02-23 11:01:04,372] ERROR in app: Exception on /docker_restart [GET]
 Traceback (most recent call last):
-  File "api.py", line 73, in <module>
-    app.run(port=9090, host=ip_vm)
-  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
-    run_simple(host, port, self, **options)
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
-    inner()
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
-    fd=fd,
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
-    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
-  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
-    HTTPServer.__init__(self, server_address, handler)
-  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
-    self.server_bind()
-  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-    SocketServer.TCPServer.server_bind(self)
-  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
-    self.socket.bind(self.server_address)
-  File "/usr/lib/python2.7/socket.py", line 228, in meth
-    return getattr(self._sock,name)(*args)
-socket.error: [Errno 98] Address already in use
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("bash reboot.sh", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'bash reboot.sh' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 11:01:04] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+reboot.sh: line 1: reboot: command not found
+[2021-02-23 11:01:12,917] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("bash reboot.sh", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'bash reboot.sh' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 11:01:12] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 11:05:42] "[33mGET / HTTP/1.1[0m" 404 -
+reboot.sh: line 1: reboot: command not found
+[2021-02-23 11:05:52,546] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("bash reboot.sh", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'bash reboot.sh' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 11:05:52] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 11:08:52] "[33mGET / HTTP/1.1[0m" 404 -
+reboot.sh: line 1: reboot: command not found
+[2021-02-23 11:09:00,551] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("bash reboot.sh", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'bash reboot.sh' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 11:09:00] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 11:10:47] "[33mGET / HTTP/1.1[0m" 404 -
+reboot.sh: line 1: reboot: command not found
+[2021-02-23 11:10:54,600] ERROR in app: Exception on /docker_restart [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python2.7/dist-packages/flask_cors/decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "api.py", line 34, in docker
+    result_success = subprocess.check_output("bash reboot.sh", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 223, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'bash reboot.sh' returned non-zero exit status 127
+10.10.2.14 - - [23/Feb/2021 11:10:54] "[35m[1mGET /docker_restart HTTP/1.1[0m" 500 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 11:13:51] "[33mGET / HTTP/1.1[0m" 404 -
+10.10.2.14 - - [23/Feb/2021 11:14:10] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+Stopping filebeat      ... 
+[4A[2KStopping filebeat-es   ... [32mdone[0m[4B[3A[2KStopping logstash      ... [32mdone[0m[3B[2A[2KStopping dsiem         ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[1A[2KStopping filebeat      ... [32mdone[0m[1B10.10.2.14 - - [23/Feb/2021 11:15:04] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 11:15:21] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+192.168.2.158
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 11:18:59] "[37mGET /mitm HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 11:19:23] "[37mGET /dos HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 11:20:00] "[37mGET /arp HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 11:20:22] "[37mGET /attacker HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 11:22:15] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:20:44] "[37mGET /deactivate_directives HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:23:50] "[37mGET /attacker HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:24:13] "[37mGET /mitm HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:26:20] "[37mGET /arp HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:26:56] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:28:06] "[37mGET /dos HTTP/1.1[0m" 200 -
+mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos.txt': No such file or directory
+10.10.2.14 - - [23/Feb/2021 12:30:08] "[37mGET /dos HTTP/1.1[0m" 200 -
+10.10.2.14 - - [23/Feb/2021 12:39:48] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+  File "api.py", line 30
+    return "stopped all docker containers":
+                                          ^
+SyntaxError: invalid syntax

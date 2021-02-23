@@ -1,3 +1,6 @@
+ip=$(ip addr show enp1s0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+echo "HOST_IP=$ip" > .env
+
 cd /root/DigitalTwinCyberrange/deployments/docker
 #restart docker containers
 pkill screen

@@ -1,4 +1,5 @@
 cd ..
+whoami
 bash deactivate_directives.sh
 cd ../deployments/docker
 docker-compose stop 

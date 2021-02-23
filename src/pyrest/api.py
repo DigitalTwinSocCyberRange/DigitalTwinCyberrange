@@ -1,4 +1,5 @@
 import subprocess
+import os
 from subprocess import Popen, PIPE
 from flask_cors import CORS, cross_origin
 from subprocess import check_output
@@ -8,14 +9,6 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/submit/<submit_data>', methods = ['POST'])
-@cross_origin()
-def submit(submit_data):
-    if (request.method == 'POST'):
-            f = open("trainee_data.txt", "a")
-            f.write(submit_data)
-            f.close()
-            return submit_data; # a multidict containing POST data
 
         
 @app.route('/deactivate_directives',methods=['GET'])
@@ -27,20 +20,21 @@ def deactivate():
 @app.route('/restart_dt',methods=['GET'])
 @cross_origin()
 def restart():
-    result_success = subprocess.check_output("reboot", shell=True);
+    result_success = subprocess.check_output("bash restart_dt.sh", shell=True);
     return "restarted dt";
 
 @app.route('/docker_stop',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash docker_stop.sh", shell=True);
-    return "stopped docker containers";
+    result_success = subprocess.check_output("bash docker_stop.sh &>/dev/null", shell=True);
+    return "stopped all docker containers":
 
 @app.route('/docker_restart',methods=['GET'])
 @cross_origin()
 def docker():
-    result_success = subprocess.check_output("bash docker_restart.sh", shell=True)
-    return "restarted all docker containers";
+    os.system("sudo reboot")
+    #result_success = subprocess.check_output("bash reboot.sh", shell=True)
+    return "rebooted maschine";
 
 @app.route('/attacker',methods=['GET'])
 @cross_origin()
