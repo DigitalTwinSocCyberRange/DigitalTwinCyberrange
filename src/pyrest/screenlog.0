@@ -299,3 +299,131 @@ mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_dos
     return "stopped all docker containers":
                                           ^
 SyntaxError: invalid syntax
+  File "api.py", line 30
+    return "stopped all docker containers":
+                                          ^
+SyntaxError: invalid syntax
+  File "api.py", line 30
+    return "stopped all docker containers":
+                                          ^
+SyntaxError: invalid syntax
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 14:04:28] "[33mGET / HTTP/1.1[0m" 404 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 14:08:28] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 14:08:55] "[33mGET /restart HTTP/1.1[0m" 404 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7]
+80.209.221.103 - - [23/Feb/2021 14:22:44] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7]
+80.209.221.103 - - [23/Feb/2021 14:23:43] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7]
+80.209.221.103 - - [23/Feb/2021 14:24:02] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 14:24:35] "[37mGET /attacker HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [d944ba6592aceaa19317885b9064fcc201b94326e3bae145d655e42ea4fc39f7]
+80.209.221.103 - - [23/Feb/2021 14:24:40] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[3A[2KStopping logstash      ... [32mdone[0m[3B[4A[2KStopping dsiem         ... [32mdone[0m[4B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping filebeat      ... [32mdone[0m[1B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [23/Feb/2021 14:28:28] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 14:33:13] "[33mGET / HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 14:33:24] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 14:42:34] "[33mGET /restart HTTP/1.1[0m" 404 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 14:43:10] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 14:43:31] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 14:43:32] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 14:43:33] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+docker_stop.sh: line 5: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 14:46:27] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 14:48:14] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+docker_stop.sh: line 4: docker-compose: command not found
+Error response from daemon: You cannot remove a running container 475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053. Stop the container before attempting removal or force remove
+Error response from daemon: remove docker_es-data: volume is in use - [475e4a8d6c761d6098fd49f830d03d290e98c6287b326ce52fd03ec584ba6053]
+80.209.221.103 - - [23/Feb/2021 15:13:02] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[3A[2KStopping logstash      ... [32mdone[0m[3B[7A[2KStopping kibana        ... [32mdone[0m[7B[4A[2KStopping dsiem         ... [32mdone[0m[4B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[1A[2KStopping filebeat      ... [32mdone[0m[1B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [23/Feb/2021 15:17:31] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)

@@ -26,8 +26,8 @@ def restart():
 @app.route('/docker_stop',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash docker_stop.sh &>/dev/null", shell=True);
-    return "stopped all docker containers":
+    result_success = subprocess.check_output("bash docker_stop.sh", shell=True);
+    return "stopped all docker containers";
 
 @app.route('/docker_restart',methods=['GET'])
 @cross_origin()
