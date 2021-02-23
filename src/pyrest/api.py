@@ -25,13 +25,13 @@ def restart():
 @app.route('/docker_stop',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash stop_docker.sh", shell=True);
+    result_success = subprocess.check_output("bash docker_stop.sh", shell=True);
     return "stopped docker containers";
 
 @app.route('/docker_restart',methods=['GET'])
 @cross_origin()
 def docker():
-    result_success = subprocess.check_output("bash restart_docker.sh", shell=True)
+    result_success = subprocess.check_output("bash docker_restart.sh", shell=True)
     return "restarted all docker containers";
 
 @app.route('/attacker',methods=['GET'])

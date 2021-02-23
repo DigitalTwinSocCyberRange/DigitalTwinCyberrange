@@ -48,7 +48,7 @@ services:
     links:
       - elasticsearch
     ports:
-      - 5601:5601
+      - 5605:5601
     networks:
       - siemnet
 
@@ -64,7 +64,7 @@ services:
       - ./conf/dsiem/configs:/dsiem/configs
     environment:
       - DSIEM_WEB_ESURL=http://elastic:cyberrange@$HOST_IP:9200
-      - DSIEM_WEB_KBNURL=http://$HOST_IP:5601
+      - DSIEM_WEB_KBNURL=http://$HOST_IP:5605
 
   filebeat:
     container_name: filebeat

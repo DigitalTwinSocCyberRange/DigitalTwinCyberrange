@@ -391,3 +391,56 @@ CalledProcessError: Command 'bash restart docker.sh' returned non-zero exit stat
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+192.168.2.158
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [22/Feb/2021 19:14:16] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:15:23] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:15:39] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:18:01] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:18:20] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:20:13] "[33mGET /restart HTTP/1.1[0m" 404 -
+192.168.2.158
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+192.168.2.158
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [22/Feb/2021 19:35:55] "[33mGET /restart HTTP/1.1[0m" 404 -
+10.10.2.14 - - [22/Feb/2021 19:41:59] "[33mGET /restart HTTP/1.1[0m" 404 -
+192.168.2.158
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 07:17:54] "[33mGET / HTTP/1.1[0m" 404 -
+Stopping kibana        ... 
+Stopping digital_twin  ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping elasticsearch ... 
+Stopping dsiem         ... 
+Stopping filebeat      ... 
+[5A[2KStopping filebeat-es   ... [32mdone[0m[5B[7A[2KStopping kibana        ... [32mdone[0m[7B[3A[2KStopping elasticsearch ... [32mdone[0m[3B[2A[2KStopping dsiem         ... [32mdone[0m[2B[4A[2KStopping logstash      ... [32mdone[0m[4B[6A[2KStopping digital_twin  ... [32mdone[0m[6B[1A[2KStopping filebeat      ... [32mdone[0m[1B10.10.2.14 - - [23/Feb/2021 07:20:31] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+192.168.2.158
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.2.158:9090/ (Press CTRL+C to quit)
+10.10.2.14 - - [23/Feb/2021 07:23:56] "[33mGET /restart HTTP/1.1[0m" 404 -
