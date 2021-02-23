@@ -8,7 +8,8 @@ oflops/
 oftest/
 openflow/
 pox/
-*.sqlite
+src/fp_db.sqlite
+src/pyrest/screenlog.0
 dsiem_backup/
 dsiem/docs/mkdocs
 dsiem/docs/TODO.md
