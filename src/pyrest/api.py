@@ -9,7 +9,14 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-
+@app.route('/submit/<submit_data>', methods = ['POST'])
+@cross_origin()
+def submit(submit_data):
+    if (request.method == 'POST'):
+            f = open("trainee_data.txt", "a")
+            f.write(submit_data)
+            f.close()
+            return submit_data; # a multidict containing POST data
         
 @app.route('/deactivate_directives',methods=['GET'])
 @cross_origin()

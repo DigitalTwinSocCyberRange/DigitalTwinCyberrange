@@ -1218,3 +1218,28 @@ Stopping dsiem         ...
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.81
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.81:9090/ (Press CTRL+C to quit)
+132.199.120.81
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.81:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [05/Mar/2021 18:06:01] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [05/Mar/2021 18:09:06] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [05/Mar/2021 18:28:01] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 19:09:16] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 19:50:00] "[37mGET /attacker HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 19:54:14] "[37mGET /mitm HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 19:59:45] "[37mGET /arp HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 20:04:48] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+37.6.77.90 - - [05/Mar/2021 20:08:51] "[37mGET /dos HTTP/1.1[0m" 200 -
