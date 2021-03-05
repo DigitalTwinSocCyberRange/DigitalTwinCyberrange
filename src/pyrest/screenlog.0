@@ -1243,3 +1243,37 @@ Stopping dsiem         ...
 37.6.77.90 - - [05/Mar/2021 19:59:45] "[37mGET /arp HTTP/1.1[0m" 200 -
 37.6.77.90 - - [05/Mar/2021 20:04:48] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
 37.6.77.90 - - [05/Mar/2021 20:08:51] "[37mGET /dos HTTP/1.1[0m" 200 -
+132.199.120.81
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.81:9090/ (Press CTRL+C to quit)
+132.199.120.81
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.81:9090/ (Press CTRL+C to quit)
+132.199.120.81
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.81:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [05/Mar/2021 21:20:50] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [05/Mar/2021 21:20:57] "[37mPOST /submit/[%22ID:%20127%22,%22Points:%200%22,%22Level:%20undefined%22,%22Times:%202021-03-04T13:36:09.430Z,2021-03-04T13:36:09.470Z,0.04,2021-03-05T11:51:42.939Z,2021-03-05T11:51:47.344Z,4.405,2021-03-05T20:29:55.091Z,2021-03-05T20:30:12.465Z,17.374,2021-03-05T20:30:28.830Z,2021-03-05T20:30:36.610Z,7.78,2021-03-05T20:30:40.227Z,2021-03-05T20:30:42.721Z,2.494,2021-03-05T20:30:48.147Z,2021-03-05T20:30:51.377Z,3.23,2021-03-05T20:32:46.065Z,2021-03-05T20:32:51.753Z,5.688%22] HTTP/1.1[0m" 200 -
+Stopping dsiem         ... 
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[6A[2KStopping kibana        ... [32mdone[0m[6B[4A[2KStopping digital_twin  ... [32mdone[0m[4B[7A[2KStopping dsiem         ... [32mdone[0m[7B[1A[2KStopping logstash      ... [32mdone[0m[1B[3A[2KStopping filebeat      ... [32mdone[0m[3B[5A[2KStopping elasticsearch ... [32mdone[0m[5B80.209.221.103 - - [05/Mar/2021 21:34:59] "[37mGET /docker_stop HTTP/1.1[0m" 200 -

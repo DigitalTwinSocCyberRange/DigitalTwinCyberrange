@@ -9,7 +9,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/submit/<submit_data>', methods = ['POST'])
+@app.route('/submit/<submit_data>', methods = ['POST','GET'])
 @cross_origin()
 def submit(submit_data):
     if (request.method == 'POST'):
