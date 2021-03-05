@@ -436,3 +436,785 @@ Stopping filebeat      ...
  * Debug mode: off
  * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
 >>>>>>> a4486e20af1499bbdff6f3fd937b0b97688119b3
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[3A[2KStopping logstash      ... [32mdone[0m[3B[4A[2KStopping dsiem         ... [32mdone[0m[4B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping filebeat      ... [32mdone[0m[1B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [23/Feb/2021 17:40:13] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 17:40:24] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 18:21:06] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 18:22:10] "[37mGET /attacker HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:23:35] "[37mGET /mitm HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:25:08] "[37mGET /arp HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:25:49] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:26:48] "[37mGET /dos HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[4A[2KStopping dsiem         ... [32mdone[0m[4B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping logstash      ... [32mdone[0m[3B[1A[2KStopping filebeat      ... [32mdone[0m[1B80.209.221.103 - - [23/Feb/2021 18:27:12] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:27:18] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 18:48:26] "[37mGET /mitm HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 18:49:13] "[37mGET /deactivate_directives HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[4A[2KStopping dsiem         ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping logstash      ... [32mdone[0m[3B[1A[2KStopping filebeat      ... [32mdone[0m[1B80.209.221.103 - - [23/Feb/2021 19:06:43] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 19:11:33] "[33mGET /restart HTTP/1.1[0m" 404 -
+Error: No such container: elasticsearch
+Error: No such volume: docker_es-data
+80.209.221.103 - - [23/Feb/2021 19:12:02] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+Error: No such container: elasticsearch
+Error: No such volume: docker_es-data
+80.209.221.103 - - [23/Feb/2021 19:12:24] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 19:12:45] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [23/Feb/2021 19:21:03] "[33mGET / HTTP/1.1[0m" 404 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[4A[2KStopping dsiem         ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping logstash      ... [32mdone[0m[3B[1A[2KStopping filebeat      ... [32mdone[0m[1B80.209.221.103 - - [23/Feb/2021 19:21:22] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 19:32:07] "[33mGET / HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 19:32:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 19:32:26] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 19:36:19] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 19:36:58] "[33mGET /restart HTTP/1.1[0m" 404 -
+Error: No such container: elasticsearch
+Error: No such volume: docker_es-data
+80.209.221.103 - - [23/Feb/2021 19:37:16] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+80.209.221.103 - - [23/Feb/2021 19:37:30] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+94.68.242.40 - - [23/Feb/2021 19:38:32] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 19:38:40] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 19:38:52] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 19:46:27] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [23/Feb/2021 19:47:03] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:11:14] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:23:52] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:30:03] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:30:48] "[37mGET /attacker HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 20:40:05] "[33mGET /restart HTTP/1.1[0m" 404 -
+mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_attacker.txt': No such file or directory
+94.68.242.40 - - [23/Feb/2021 20:40:43] "[37mGET /attacker HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 20:41:47] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:49:15] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:50:19] "[37mGET /mitm HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 20:55:04] "[33mGET /restart HTTP/1.1[0m" 404 -
+94.68.242.40 - - [23/Feb/2021 20:56:13] "[37mGET /arp HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 20:58:32] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 21:00:08] "[37mGET /dos HTTP/1.1[0m" 200 -
+94.68.242.40 - - [23/Feb/2021 21:00:19] "[33mGET /restart HTTP/1.1[0m" 404 -
+mv: cannot stat './../../deployments/docker/conf/dsiem/configs/directives_dt_attacker.txt': No such file or directory
+94.68.242.40 - - [23/Feb/2021 21:01:39] "[37mGET /attacker HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[4A[2KStopping dsiem         ... [32mdone[0m[4B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping logstash      ... [32mdone[0m[3B[1A[2KStopping filebeat      ... [32mdone[0m[1B80.209.221.103 - - [23/Feb/2021 21:06:32] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+167.248.133.54 - - [24/Feb/2021 01:24:52] code 400, message Bad request version ('\xc0\x14\xc0')
+167.248.133.54 - - [24/Feb/2021 01:24:52] "[31m[1m {  w(Î0ß”ÒlØë’í0Ù∏∏^Z9EÂ0áù+™  ¿/¿+¿¿¿¿  ¿¿[0m" 400 -
+167.248.133.54 - - [24/Feb/2021 01:24:52] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:52] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:52] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:53] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:53] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:53] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:53] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:54] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:54] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:54] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:54] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:55] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x032e\x1f.^\xb9\x1e\xf3\xc2\xadY3Dm|t\xf9=\xdd\x00t\xc2\xb5\x07\\\xc3\x06\xa1\xa4\xc5\x85\x06\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+167.248.133.54 - - [24/Feb/2021 01:24:56] "[31m[1m {  w2e.^πÛ¬≠Y3Dm|t˘=› t¬µ\√°§≈Ö  ¿/¿+¿¿¿¿  ¿¿[0m" 400 -
+167.248.133.54 - - [24/Feb/2021 01:24:57] "[33mGET / HTTP/1.1[0m" 404 -
+167.248.133.54 - - [24/Feb/2021 01:24:57] "[33mGET / HTTP/1.1[0m" 404 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [24/Feb/2021 07:07:54] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [24/Feb/2021 07:08:29] "[33mGET / HTTP/1.1[0m" 404 -
+80.209.221.103 - - [24/Feb/2021 07:16:57] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping dsiem         ... 
+Stopping logstash      ... 
+Stopping filebeat-es   ... 
+Stopping filebeat      ... 
+[2A[2KStopping filebeat-es   ... [32mdone[0m[2B[3A[2KStopping logstash      ... [32mdone[0m[3B[4A[2KStopping dsiem         ... [32mdone[0m[4B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B162.142.125.39 - - [24/Feb/2021 07:18:00] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.39 - - [24/Feb/2021 07:18:00] "[31m[1m {  w8c∫_¶D       áá*hs& ∑§‹≤%^@i“ù·_'˜  ¿/¿+¿¿¿¿    ¿¿[0m" 400 -
+162.142.125.39 - - [24/Feb/2021 07:18:00] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:00] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:01] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:01] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:01] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:01] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:02] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:02] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+[5A[2KStopping digital_twin  ... [32mdone[0m[5B162.142.125.39 - - [24/Feb/2021 07:18:02] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:02] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+[1A[2KStopping filebeat      ... [32mdone[0m[1B162.142.125.39 - - [24/Feb/2021 07:18:03] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+80.209.221.103 - - [24/Feb/2021 07:18:03] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+162.142.125.39 - - [24/Feb/2021 07:18:03] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xb1\xb8.\xc0b\xfa\xe0si9%\xban\xfd\x80\xba\xa2\xa3v9\x86\x84R\xee\xed\xc69b\xd9uZ\x8d\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+162.142.125.39 - - [24/Feb/2021 07:18:04] "[31m[1m {  w±∏.¿b˙‡si9%∫n˝Ä∫¢£v9ÜÑRÓÌ∆9bŸuZç  ¿/¿+¿¿¿¿    ¿¿[0m" 400 -
+162.142.125.39 - - [24/Feb/2021 07:18:05] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.39 - - [24/Feb/2021 07:18:06] "[33mGET / HTTP/1.1[0m" 404 -
+132.199.120.83
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.83:9090/ (Press CTRL+C to quit)
+162.142.125.39 - - [25/Feb/2021 03:28:54] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03@e\xda;\x1c\x8b3\x03!q\xff\xec0Br\x97\xdb\xc7\x86\xfd\xa1D\xf1\xb0\xa2\x10r\xb0y*\xd9_\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+162.142.125.39 - - [25/Feb/2021 03:29:03] "[31m[1m {  w@e⁄;ã3!qˇÏ0Bró€«Ü˝°DÒ∞¢r∞y*Ÿ_  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+162.142.125.39 - - [25/Feb/2021 03:29:10] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x90\xf3<\x8a\xf2\x9d.\x1a\xdc(\xa3Y\xb3\xe1\x99<\xe96~b^\x0f9\xc2\x99\xf35yH,\x13\xd1\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+162.142.125.39 - - [25/Feb/2021 03:29:10] "[31m[1m {  wêÛ<äÚù.‹(£Y≥·ô<È6~b^9¬ôÛ5yH,—  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+162.142.125.39 - - [25/Feb/2021 03:29:10] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.39 - - [25/Feb/2021 03:29:11] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.39 - - [25/Feb/2021 03:29:11] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.128 - - [25/Feb/2021 03:48:14] "[33mGET / HTTP/1.1[0m" 404 -
+192.168.1.197
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.1.197:9090/ (Press CTRL+C to quit)
+192.168.1.197
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.1.197:9090/ (Press CTRL+C to quit)
+192.168.1.197
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://192.168.1.197:9090/ (Press CTRL+C to quit)
+172.18.126.226
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://172.18.126.226:9090/ (Press CTRL+C to quit)
+172.18.126.226
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://172.18.126.226:9090/ (Press CTRL+C to quit)
+172.18.126.226
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://172.18.126.226:9090/ (Press CTRL+C to quit)
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+132.199.121.147 - - [25/Feb/2021 12:37:49] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [25/Feb/2021 12:39:28] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.121.147 - - [25/Feb/2021 12:41:02] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [25/Feb/2021 12:45:49] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [25/Feb/2021 12:46:42] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.121.147 - - [25/Feb/2021 12:49:00] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+132.199.121.147 - - [25/Feb/2021 12:55:03] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.121.147 - - [25/Feb/2021 12:55:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [25/Feb/2021 12:57:19] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.121.147 - - [25/Feb/2021 13:03:20] "[37mGET /attacker HTTP/1.1[0m" 200 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [25/Feb/2021 13:08:44] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+162.142.125.53 - - [25/Feb/2021 13:44:04] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.53 - - [25/Feb/2021 13:44:04] "[31m[1m {  wR ù ıã_“·WGN∫J∫¢©¬πOw2'Y˜≤Éñ{R¸  ¿/¿+¿¿¿¿     ¿¿[0m" 400 -
+162.142.125.53 - - [25/Feb/2021 13:44:05] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:05] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:05] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:06] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:06] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:06] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:06] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:06] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:07] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:07] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:07] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:07] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:09] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.53 - - [25/Feb/2021 13:44:09] "[31m[1m {  wÿ¸îw˘√√±&◊2Xê`L‚≤ü&ÕXÌü¥âXc◊ˇæ  ¿/¿+¿¿¿¿      ¿¿[0m" 400 -
+162.142.125.53 - - [25/Feb/2021 13:44:10] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.53 - - [25/Feb/2021 13:44:10] "[33mGET / HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:08] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xe5_P]\xcff\x86\xf1\x9e\xde\x84\xa3\x04M]\x99\xa4\xe7G\xd2q\xe8\xee\xe7p\x9d\x8d\xf1\xde\xd2\xe6\x06\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+74.120.14.55 - - [25/Feb/2021 19:53:08] "[31m[1m {  wÂ_P]œfÜÒûﬁÑ£M]ô§ÁG“qËÓÁpùçÒﬁ“Ê  ¿/¿+¿¿¿¿        ¿¿[0m" 400 -
+74.120.14.55 - - [25/Feb/2021 19:53:08] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:09] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:09] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:09] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:09] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:10] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:10] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:10] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:10] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:10] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:11] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:11] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:12] code 400, message Bad request version ('\xc0\x14\xc0')
+74.120.14.55 - - [25/Feb/2021 19:53:12] "[31m[1m {  w£ mW!†wmïë∂ÙqŸºY¿c2ÅÈÆ¿z%åµfÈ   ¿/¿+¿¿¿¿     ¿¿[0m" 400 -
+74.120.14.55 - - [25/Feb/2021 19:53:13] "[33mGET / HTTP/1.1[0m" 404 -
+74.120.14.55 - - [25/Feb/2021 19:53:14] "[33mGET / HTTP/1.1[0m" 404 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [26/Feb/2021 07:22:41] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:23:01] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:23:43] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:24:32] "[37mGET /attacker HTTP/1.1[0m" 200 -
+80.209.221.103 - - [26/Feb/2021 07:24:56] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:25:28] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:26:00] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:27:39] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:31:26] "[37mGET /mitm HTTP/1.1[0m" 200 -
+80.209.221.103 - - [26/Feb/2021 07:32:48] "[37mGET /arp HTTP/1.1[0m" 200 -
+80.209.221.103 - - [26/Feb/2021 07:33:23] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+80.209.221.103 - - [26/Feb/2021 07:33:41] "[37mGET /dos HTTP/1.1[0m" 200 -
+132.199.120.101
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.101:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [26/Feb/2021 07:36:36] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:37:03] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:37:18] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:38:03] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:38:46] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:39:00] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 07:39:28] "[33mGET /restart HTTP/1.1[0m" 404 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [26/Feb/2021 17:15:29] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 17:17:02] "[37mGET /attacker HTTP/1.1[0m" 200 -
+167.248.133.53 - - [26/Feb/2021 18:08:47] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xb43\x99Ok\x0b@\x86\xe3\x1ef\xcbk&[\xe5\xc0\x0c]\xbf\x8b\xd2\xeeS\xce\xd8kV\xd2\xfc\xc2\x06\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0')
+167.248.133.53 - - [26/Feb/2021 18:08:47] "[31m[1m {  w¥3ôOk@Ü„fÀk&[Â¿]øã“ÓSŒÿkV“¸¬  ¿/¿+¿¿¿¿        ¿¿[0m" 400 -
+167.248.133.53 - - [26/Feb/2021 18:08:47] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:48] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:48] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:48] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:48] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:49] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:49] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:49] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:49] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:49] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:50] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:50] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03J\xc3D\x07\xfbA\x08Z>L\xf9\x06\xce\x13s[*\x0f\xe0\x94\xdb\xe4\xa8\x1ezw\xb2y\xab`^%\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+167.248.133.53 - - [26/Feb/2021 18:08:51] "[31m[1m {  wJ√D˚AZ>L˘Œs[*‡î€‰®zw≤y´`^%  ¿/¿+¿¿¿¿   ¿¿[0m" 400 -
+167.248.133.53 - - [26/Feb/2021 18:08:53] "[33mGET / HTTP/1.1[0m" 404 -
+167.248.133.53 - - [26/Feb/2021 18:08:53] "[33mGET / HTTP/1.1[0m" 404 -
+80.209.221.103 - - [26/Feb/2021 18:15:17] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping dsiem         ... [32mdone[0m[1B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[4A[2KStopping filebeat      ... [32mdone[0m[4B80.209.221.103 - - [26/Feb/2021 18:29:40] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+74.120.14.55 - - [26/Feb/2021 19:49:45] code 400, message Bad request version ('\xc0\x14\xc0')
+74.120.14.55 - - [26/Feb/2021 19:49:45] "[31m[1m {  w¨≈äö˚ßq—ñÅøÕ≠mzˆa†SJ˝ê¯`ûÙeq·ŸW  ¿/¿+¿¿¿¿        ¿¿[0m" 400 -
+74.120.14.55 - - [26/Feb/2021 19:49:45] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:46] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:46] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:46] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:46] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:46] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:47] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:47] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:47] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:47] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:48] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:48] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:49] code 400, message Bad request version ('\xc0\x14\xc0')
+74.120.14.55 - - [26/Feb/2021 19:49:49] "[31m[1m {  w=«é[+mgÈ|éClº¿á√ûùœ¸œÆôúpëΩ˜Ô  ¿/¿+¿¿¿¿  ¿¿[0m" 400 -
+74.120.14.55 - - [26/Feb/2021 19:49:50] "[33mGET / HTTP/1.1[0m" 404 -
+74.120.14.55 - - [26/Feb/2021 19:49:51] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:23] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.55 - - [27/Feb/2021 02:31:23] "[31m[1m {  wpº≠Ùòlmﬂv>?··©9yn…Z ˙Zˇf√»µ€¨  ¿/¿+¿¿¿¿      ¿¿[0m" 400 -
+162.142.125.55 - - [27/Feb/2021 02:31:24] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:24] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:24] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:24] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:24] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:25] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:25] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:25] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:25] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:26] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:26] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:26] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:31] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.55 - - [27/Feb/2021 02:31:31] "[31m[1m {  w‰P_ŸìTXÙê9M3.‚'È….Áajì:f.ﬁ}gı  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+162.142.125.55 - - [27/Feb/2021 02:31:33] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.55 - - [27/Feb/2021 02:31:33] "[33mGET / HTTP/1.1[0m" 404 -
+23.129.64.215 - - [27/Feb/2021 09:08:13] "[33mGET / HTTP/1.1[0m" 404 -
+80.209.221.103 - - [27/Feb/2021 09:21:19] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [27/Feb/2021 09:45:21] "[33mGET /restart HTTP/1.1[0m" 404 -
+80.209.221.103 - - [27/Feb/2021 16:45:56] "[33mGET /restart HTTP/1.1[0m" 404 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[1A[2KStopping dsiem         ... [32mdone[0m[1B[4A[2KStopping filebeat      ... [32mdone[0m[4B[7A[2KStopping kibana        ... [32mdone[0m[7B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [27/Feb/2021 17:14:57] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+194.26.29.9 - - [28/Feb/2021 04:59:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+194.26.29.9 - - [28/Feb/2021 04:59:10] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+194.26.29.9 - - [28/Feb/2021 04:59:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+194.26.29.9 - - [28/Feb/2021 04:59:10] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+45.146.165.62 - - [28/Feb/2021 09:09:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+45.146.165.62 - - [28/Feb/2021 09:09:51] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+45.146.165.62 - - [28/Feb/2021 09:09:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+45.146.165.62 - - [28/Feb/2021 09:09:51] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+80.209.221.103 - - [28/Feb/2021 15:52:36] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[2A[2KStopping logstash      ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping dsiem         ... [32mdone[0m[1B[4A[2KStopping filebeat      ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [28/Feb/2021 17:30:48] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+178.128.15.124 - - [28/Feb/2021 21:44:14] "[33mGET / HTTP/1.0[0m" 404 -
+91.239.130.31 - - [01/Mar/2021 02:28:12] "[33mGET http://158.51.127.254/ok.txt HTTP/1.1[0m" 404 -
+188.166.41.4 - - [01/Mar/2021 06:22:41] "[33mGET / HTTP/1.0[0m" 404 -
+80.209.221.103 - - [01/Mar/2021 11:15:35] "[37mGET /docker_restart HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.140.122.126 - - [01/Mar/2021 12:03:50] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+167.248.133.37 - - [01/Mar/2021 12:09:46] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xbf\x91\xe1J\xbc\x0e2\xf4/\xd3\xaa\xf4\xd4\x94\xdce\xb1\xd1f\x1b\xb7f\x8a\x03X\x97H\xaa\x80\xef\x93=\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+167.248.133.37 - - [01/Mar/2021 12:09:46] "[31m[1m {  wøë·Jº2Ù/”™Ù‘î‹e±—f∑fäXóH™ÄÔì=  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+167.248.133.37 - - [01/Mar/2021 12:09:46] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:46] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:46] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:47] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:47] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:47] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:47] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:48] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:48] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:48] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:48] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:49] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x12\xb3\xb3\xed\xb4\xfev_F3%\xcfh\xcb\x84Q\xa9\xe6\xc1bwr\xd2\x1d.\x13\xf7\x8a\x87\xd5!\xe5\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+167.248.133.37 - - [01/Mar/2021 12:09:50] "[31m[1m {  w≥≥Ì¥˛v_F3%œhÀÑQ©Ê¡bwr“.˜äá’!Â  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+167.248.133.37 - - [01/Mar/2021 12:09:51] "[33mGET / HTTP/1.1[0m" 404 -
+167.248.133.37 - - [01/Mar/2021 12:09:51] "[33mGET / HTTP/1.1[0m" 404 -
+80.140.122.126 - - [01/Mar/2021 12:12:29] "[37mGET /attacker HTTP/1.1[0m" 200 -
+80.140.122.126 - - [01/Mar/2021 12:16:39] "[37mGET /mitm HTTP/1.1[0m" 200 -
+80.140.122.126 - - [01/Mar/2021 12:24:13] "[37mGET /arp HTTP/1.1[0m" 200 -
+80.140.122.126 - - [01/Mar/2021 12:37:48] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+80.140.122.126 - - [01/Mar/2021 12:43:54] "[37mGET /dos HTTP/1.1[0m" 200 -
+222.186.136.150 - - [01/Mar/2021 13:14:35] "[33mGET http://fuwu.sogou.com/404/index.html HTTP/1.1[0m" 404 -
+222.186.136.150 - - [01/Mar/2021 13:14:35] code 400, message Bad request version ('\xc0\x14\xc0')
+222.186.136.150 - - [01/Mar/2021 13:14:35] "[31m[1m Ó  Ísâq>Œs´ÊQC°ºæ')d®µ&@¨O˘ı)ä†£u Ô0ÑäõÑìÀ‹g-€O∏m›‘Ç˘±t¯tä„]-˙M &Ã®Ã©¿/¿0¿+¿,¿¿ ¿¿[0m" 400 -
+222.186.136.150 - - [01/Mar/2021 13:14:42] code 400, message Bad request syntax ('\x05\x01\x00')
+222.186.136.150 - - [01/Mar/2021 13:14:42] "[31m[1m [0m" 400 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[5A[2KStopping digital_twin  ... [32mdone[0m[5B[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[2A[2KStopping logstash      ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping dsiem         ... [32mdone[0m[1B[4A[2KStopping filebeat      ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [01/Mar/2021 14:13:21] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+Error: No such container: elasticsearch
+Error: No such volume: docker_es-data
+80.209.221.103 - - [01/Mar/2021 19:04:24] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+45.146.166.247 - - [02/Mar/2021 04:20:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+45.146.166.247 - - [02/Mar/2021 04:20:06] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+45.146.166.247 - - [02/Mar/2021 04:20:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+45.146.166.247 - - [02/Mar/2021 04:20:06] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+74.120.14.40 - - [02/Mar/2021 06:38:45] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03>\xdf\xc8\x01U\x10\xa6*u\x98\xd2\x02\xfa\xd4\x0b\x1d\xad2\x93J\xfa\x0bG\xccU~\xf42\xc4\x98\xc1l\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0')
+74.120.14.40 - - [02/Mar/2021 06:38:45] "[31m[1m {  w>ﬂ»U¶*uò“˙‘≠2ìJ˙GÃU~Ù2ƒò¡l  ¿/¿+¿¿¿¿    ¿¿[0m" 400 -
+74.120.14.40 - - [02/Mar/2021 06:38:45] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:45] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:46] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:46] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:46] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:46] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:47] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:47] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:47] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:47] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:48] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:48] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:49] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03*\xe0$w\xfc$\x07\x9a)\xd1\xcc\x02\x96\xc0\xf3v\xe5*\x9b\xa5\x82')
+74.120.14.40 - - [02/Mar/2021 06:38:49] "[31m[1m {  w*‡$w¸$ö)—Ãñ¿ÛvÂ*õ•Ç[0m" 400 -
+74.120.14.40 - - [02/Mar/2021 06:38:50] "[33mGET / HTTP/1.1[0m" 404 -
+74.120.14.40 - - [02/Mar/2021 06:38:51] "[33mGET / HTTP/1.1[0m" 404 -
+213.108.134.156 - - [02/Mar/2021 07:56:47] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+213.108.134.156 - - [02/Mar/2021 07:56:47] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+78.128.112.14 - - [02/Mar/2021 12:07:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+78.128.112.14 - - [02/Mar/2021 12:07:05] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+162.142.125.53 - - [02/Mar/2021 12:22:22] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x8d\x17\xf1')
+162.142.125.53 - - [02/Mar/2021 12:22:22] "[31m[1m {  wçÒ[0m" 400 -
+162.142.125.53 - - [02/Mar/2021 12:22:23] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:23] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:24] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:25] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:25] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:26] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:26] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:27] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:27] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:28] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:28] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:28] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:30] code 400, message Bad request version ('\xc0\x14\xc0')
+162.142.125.53 - - [02/Mar/2021 12:22:30] "[31m[1m {  wÏıQöˆ&kªs}]âåâ2oŒJoI•º3˜Ú  ¿/¿+¿¿¿¿  ¿¿[0m" 400 -
+162.142.125.53 - - [02/Mar/2021 12:22:31] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.53 - - [02/Mar/2021 12:22:31] "[33mGET / HTTP/1.1[0m" 404 -
+78.128.112.14 - - [02/Mar/2021 13:40:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+78.128.112.14 - - [02/Mar/2021 13:40:23] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [03/Mar/2021 11:29:26] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [03/Mar/2021 11:34:25] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 12:06:03] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 12:26:57] "[37mGET /attacker HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 12:33:22] "[37mGET /mitm HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 12:45:52] "[37mGET /arp HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 12:53:18] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+95.89.25.6 - - [03/Mar/2021 13:02:14] "[37mGET /dos HTTP/1.1[0m" 200 -
+185.156.72.7 - - [03/Mar/2021 13:26:11] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+185.156.72.7 - - [03/Mar/2021 13:26:11] "[31m[1m  /*‡     Cookie: mstshash=Administr[0m" 400 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[1A[2KStopping dsiem         ... [32mdone[0m[1B[7A[2KStopping kibana        ... [32mdone[0m[7B[4A[2KStopping filebeat      ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [03/Mar/2021 13:37:59] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.121.147 - - [04/Mar/2021 09:52:39] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping dsiem         ... [32mdone[0m[1B[6A[2KStopping elasticsearch ... [32mdone[0m[6B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[4A[2KStopping filebeat      ... [32mdone[0m[4B132.199.121.147 - - [04/Mar/2021 10:24:03] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.121.147 - - [04/Mar/2021 10:24:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+80.209.221.103 - - [04/Mar/2021 11:31:37] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [04/Mar/2021 11:58:28] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 12:16:40] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 12:47:48] "[37mGET /attacker HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 12:55:15] "[37mGET /mitm HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 13:06:37] "[37mGET /arp HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 13:14:00] "[37mGET /log_manipulation HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 13:22:18] "[37mGET /dos HTTP/1.1[0m" 200 -
+94.134.92.139 - - [04/Mar/2021 13:32:13] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+80.209.221.103 - - [04/Mar/2021 13:35:59] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping dsiem         ... [32mdone[0m[1B[4A[2KStopping filebeat      ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [04/Mar/2021 15:06:57] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.121.147 - - [05/Mar/2021 11:41:26] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+132.199.121.147 - - [05/Mar/2021 11:52:01] "[37mGET /attacker HTTP/1.1[0m" 200 -
+91.44.250.167 - - [05/Mar/2021 11:55:20] "[37mGET /restart_dt HTTP/1.1[0m" 200 -
+Stopping kibana        ... 
+Stopping elasticsearch ... 
+Stopping digital_twin  ... 
+Stopping filebeat      ... 
+Stopping filebeat-es   ... 
+Stopping logstash      ... 
+Stopping dsiem         ... 
+[3A[2KStopping filebeat-es   ... [32mdone[0m[3B[1A[2KStopping dsiem         ... [32mdone[0m[1B[7A[2KStopping kibana        ... [32mdone[0m[7B[5A[2KStopping digital_twin  ... [32mdone[0m[5B[2A[2KStopping logstash      ... [32mdone[0m[2B[4A[2KStopping filebeat      ... [32mdone[0m[4B[6A[2KStopping elasticsearch ... [32mdone[0m[6B132.199.121.147 - - [05/Mar/2021 11:58:15] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+162.142.125.53 - - [05/Mar/2021 14:36:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03`\xaa|\xbf#N\xbd+wu\xd6\x01\xe7\x1a\x07Z\xee\xd6\xfb]\xa7\xbdiz\xb5C<%\x8dK[\xfe\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+162.142.125.53 - - [05/Mar/2021 14:36:25] "[31m[1m {  w`™|ø#NΩ+wu÷ÁZÓ÷˚]ßΩizµC<%çK[˛  ¿/¿+¿¿¿¿       ¿¿[0m" 400 -
+162.142.125.53 - - [05/Mar/2021 14:36:25] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:25] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:25] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:26] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:26] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:26] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:26] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:27] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:27] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:27] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:27] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:27] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:29] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x00\xd17;\xf5-\xb4\x06^\xba\x15\xcc(\x92\xed\xf4\xa3\xe4\x8a\x99\xf7E\xc1\xed$\x1e\x89\x04Aj\xe7\x97\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0')
+162.142.125.53 - - [05/Mar/2021 14:36:29] "[31m[1m {  w —7;ı-¥^∫Ã(íÌÙ£‰äô˜E¡Ì$âAjÁó  ¿/¿+¿¿¿¿ ¿¿[0m" 400 -
+162.142.125.53 - - [05/Mar/2021 14:36:30] "[33mGET / HTTP/1.1[0m" 404 -
+162.142.125.53 - - [05/Mar/2021 14:36:30] "[33mGET / HTTP/1.1[0m" 404 -
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)

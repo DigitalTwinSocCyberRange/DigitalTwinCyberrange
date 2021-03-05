@@ -16,7 +16,7 @@ cd pyrest
 screen -dmSL main python api.py -Logfile
 
 cd ./../../../frontendCyberrange
-screen -dmSL main npm run serve -Logfile
+screen -dmSL frontend npm run serve -Logfile
 
 
 
