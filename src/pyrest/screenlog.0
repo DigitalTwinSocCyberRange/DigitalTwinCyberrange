@@ -1757,3 +1757,25 @@ Stopping filebeat      ...
 Stopping filebeat-es   ... 
 Stopping logstash      ... 
 [2A[2KStopping filebeat-es   ... [32mdone[0m[2B[5A[2KStopping dsiem         ... [32mdone[0m[5B[7A[2KStopping kibana        ... [32mdone[0m[7B[1A[2KStopping logstash      ... [32mdone[0m[1B[4A[2KStopping digital_twin  ... [32mdone[0m[4B[3A[2KStopping filebeat      ... [32mdone[0m[3B[6A[2KStopping elasticsearch ... [32mdone[0m[6B80.209.221.103 - - [16/Mar/2021 12:13:40] "[37mGET /docker_stop HTTP/1.1[0m" 200 -
+74.120.14.54 - - [16/Mar/2021 13:54:50] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03G\xe7\x15r\x19\x1cL*\x14\x18\to\xfa\x984\xf0\xf9P\xa2\xdb\xa3U\t\xdb\xfcs\x06,\xa3\x16))\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0')
+74.120.14.54 - - [16/Mar/2021 13:54:50] "[31m[1m {  wGçrL* oú˜4ðùP¢Û£U     Ûüs,£))  À/À+ÀÀÀÀ ÀÀ[0m" 400 -
+74.120.14.54 - - [16/Mar/2021 13:54:51] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:51] "[33mGET /api/v1/targets HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:51] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:51] "[33mGET /api/v1/label/version/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:52] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:52] "[33mGET /api/v1/label/goversion/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:52] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:52] "[33mGET /api/v1/query?query=prometheus_build_info HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:53] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:53] "[33mGET /api/v1/labels HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:53] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:53] "[33mGET /api/v1/label/__name__/values HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:55] code 400, message Bad request version ('\xc0\x14\xc0')
+74.120.14.54 - - [16/Mar/2021 13:54:55] "[31m[1m {  w0ñG=?Ô‘ç4”'gÌRàª­Ï‹!'Í­û  À/À+ÀÀÀÀ      ÀÀ[0m" 400 -
+74.120.14.54 - - [16/Mar/2021 13:54:56] "[33mGET / HTTP/1.1[0m" 404 -
+74.120.14.54 - - [16/Mar/2021 13:54:56] "[33mGET / HTTP/1.1[0m" 404 -
+91.241.19.150 - - [16/Mar/2021 14:38:16] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+91.241.19.150 - - [16/Mar/2021 14:38:16] "[31m[1m  /*à     Cookie: mstshash=Administr[0m" 400 -
+79.124.62.190 - - [16/Mar/2021 15:11:34] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:')
+79.124.62.190 - - [16/Mar/2021 15:11:34] "[31m[1m  /*à     Cookie: mstshash=Administr[0m" 400 -
