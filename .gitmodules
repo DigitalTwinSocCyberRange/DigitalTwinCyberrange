@@ -1,0 +1,3 @@
+[submodule "frontendCyberrange"]
+	path = frontendCyberrange
+	url = git@github.com:lenaglas/frontendCyberrange.git
