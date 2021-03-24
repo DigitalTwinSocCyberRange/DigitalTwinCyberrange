@@ -18,7 +18,7 @@ bash setup_python.sh
 This will start the microservice-infrastructure (Elasticsearch, Filebeat, Logstash, Kibana, Dsiem and Digital Twin), the cyber range frontend (running on port 7080) and the API that connects both
 
 ```bash
-cd /deployments/docker && \
+cd deployments/docker && \
 bash init_cyberrange.sh
  ```
 4. Enter the ip address or hostname where the cyberrange should be deployed. Usually this is either the default ip address of the maschine or localhost. 192.168.2.54 is used as an example ip address here.
@@ -29,7 +29,7 @@ bash init_cyberrange.sh
 5. To restart the infrastructure you can either run the startup script
  
  ```bash
-cd /deployments/docker && \
+cd deployments/docker && \
 bash start_docker_api.sh
  ```
    or use the API-functionality **http://192.168.2.54:9090/docker_restart**
@@ -37,7 +37,7 @@ bash start_docker_api.sh
 5. To shut down the infrastructure
  
   ```bash
-cd /deployments/docker && \
+cd deployments/docker && \
 bash docker_stop.sh
  ```
   or use the API-functionality **http://192.168.2.54:9090/docker_stop**
