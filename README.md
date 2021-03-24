@@ -8,7 +8,7 @@
 git clone git@github.com:DigitalTwinSocCyberrange/DigitalTwinCyberrange.git && \
 git clone git@github.com:DigitalTwinSocCyberrange/frontendCyberrange.git
  ```
- 2. Install json and install required packages:
+ 2. Install latest version of npm and required npm packages:
 ```bash
 cd frontendCyberrange && \
 sudo apt install nodejs && \
@@ -17,7 +17,7 @@ npm install && \
 cd ..
  ```
 
-2. Install Python2.7, pip2.7 and required packages by running:
+2. Install Python2.7, pip2.7 and required pythpn packages:
 ```bash
 cd DigitalTwinCyberrange && \
 bash setup_python.sh
