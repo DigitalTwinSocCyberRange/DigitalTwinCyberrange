@@ -17,7 +17,7 @@ def submit(submit_data):
             f.write(submit_data)
             f.close()
             return submit_data; # a multidict containing POST data
-        
+               
 @app.route('/deactivate_directives',methods=['GET'])
 @cross_origin()
 def deactivate():
@@ -30,18 +30,17 @@ def restart():
     result_success = subprocess.check_output("bash restart_dt.sh", shell=True);
     return "restarted dt";
 
-@app.route('/docker_stop',methods=['GET'])
+@app.route('/stop_cr',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash docker_stop.sh &>/dev/null", shell=True);
-    return "stopped all docker containers";
+    result_success = subprocess.check_output("bash ./../../deployments/docker/docker_stop.sh &>/dev/null", shell=True);
+    return "successfully shut down cyber range infrastructure";
 
-@app.route('/docker_restart',methods=['GET'])
+@app.route('/start_cr',methods=['GET'])
 @cross_origin()
 def docker():
-    os.system("sudo reboot")
-    #result_success = subprocess.check_output("bash reboot.sh", shell=True)
-    return "rebooted maschine";
+    result_success = subprocess.check_output("bash ./../../deployments/docker/start_docker_api.sh &>/dev/null", shell=True)
+    return "successfully (re)started cyber range infrastructure";
 
 @app.route('/attacker',methods=['GET'])
 @cross_origin()
@@ -76,7 +75,6 @@ def arp():
 
 
 ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).rstrip();
-print ip_vm
 
 
 app.run(port=9090, host=ip_vm)

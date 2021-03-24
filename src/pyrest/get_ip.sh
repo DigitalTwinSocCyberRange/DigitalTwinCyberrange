@@ -1,1 +1,2 @@
-ip addr show enp1s0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1
+cat ./../../deployments/docker/.env | grep HOST_IP= | cut -d '=' -f2
+
