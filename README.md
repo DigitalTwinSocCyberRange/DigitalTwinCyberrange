@@ -1,12 +1,20 @@
 # DigitalTwinCyberrange
 
-## Installation
+## Installation (for Ubuntu 20.04)
 
 1. Install Docker-Compose as described here: https://docs.docker.com/compose/install/
 2. Clone the required repositories:
 ```bash
 git clone git@github.com:DigitalTwinSocCyberrange/DigitalTwinCyberrange.git && \
 git clone git@github.com:DigitalTwinSocCyberrange/frontendCyberrange.git
+ ```
+ 2. Install json and install required packages:
+```bash
+cd frontendCyberrange && \
+sudo apt install nodejs && \
+npm install -g npm@latest && \
+npm install && \
+cd ..
  ```
 
 2. Install Python2.7, pip2.7 and required packages by running:
