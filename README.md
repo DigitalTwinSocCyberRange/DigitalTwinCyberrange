@@ -3,7 +3,7 @@
 
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6czq4r2_kTk
-" target="_blank"><img src="http://img.youtube.com/vi/6czq4r2_kTk/maxresdefault.jpg" 
+" target="_blank"><img src="./images/Video2.png" 
 alt="Introduction" width="500" border="2" corder-color="black" /></a> </p> 
 
 ## Architecture of the prototype
