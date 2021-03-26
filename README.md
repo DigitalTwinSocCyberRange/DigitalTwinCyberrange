@@ -116,13 +116,15 @@ While taking part in the cyber range training, furthermore, the following data i
 ### Import and export of user data with .csv files
 - Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
 - Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/FirebaseScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
-- Replace the sample user data in userdata.csv with your user data sets
+- Replace the sample user data in [userdata.csv](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts/usernames.csv) with your user data sets
 - Run import script:
 ```bash
+cd frontendCyberrange/userDataScripts && \
 python3 importFromCsv.py
  ```
  - To export user data (points, level, times) after the training, run:
  
  ```bash
+cd frontendCyberrange/userDataScripts && \
 python3 exportToCsv.py
  ```
