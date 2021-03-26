@@ -1,5 +1,15 @@
 # DigitalTwinCyberrange
 **DigitalTwinSocCyberrange** is a research project by the University of Regensburg and the Ionian University. This prototype aims to provide training for SOC analysts in a highly realisitic environment making use of the simulation component of the digital twin of an industrial filling plant. The concept was evaluated in an extensive user study. The results of the user study are presented in the [userStudy repository](https://github.com/DigitalTwinSocCyberrange/userStudy). 
+ <p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6czq4r2_kTk
+" target="_blank"><img src="http://img.youtube.com/vi/6czq4r2_kTk/maxresdefault.jpg" 
+alt="Introduction" width="500" border="2" corder-color="black" /></a> </p>
+
+## Architecture of the prototype
+ <p align="center">
+  <img src="./images/Technologies.jpg" />
+</p>
+
 
 ## Installation (for Ubuntu 20.04)
 
@@ -31,7 +41,11 @@ bash init_cyberrange.sh
 Enter the Hostname or IP Address where the cyber range will be deployed: 199.999.9.99
 ```
  - Access the cyber range on port 7080: **ht<span>tp://</span>199.999.9.99:7080**
-   
+ <p align="center">
+  <img src="./images/Login.png" width="500" />
+</p>
+
+ 
  - to get an idea of the prototype, you can use the demo user (without user data management) **ID=127**
  - Bild von cyber range startseite und 127
  - If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
