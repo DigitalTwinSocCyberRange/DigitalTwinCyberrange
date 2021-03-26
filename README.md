@@ -121,3 +121,8 @@ While taking part in the cyber range training, furthermore, the following data i
 ```bash
 python3 importFromCsv.py
  ```
+ - To export user data (points, level, times) after the training, run:
+ 
+ ```bash
+python3 exportToCsv.py
+ ```
