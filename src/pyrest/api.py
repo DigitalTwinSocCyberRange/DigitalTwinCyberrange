@@ -74,8 +74,9 @@ def arp():
 
 
 
-ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).rstrip();
-
+ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).decode("utf-8").rstrip();
+print(ip_vm)
+#ip_vm=ipaddress.IPv4Address(ip_vm)
 
 app.run(port=9090, host=ip_vm)
 
