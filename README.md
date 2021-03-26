@@ -71,8 +71,6 @@ To restart the infrastructure you can either the use the API-functionality **ht<
 cd deployments/docker && \
 bash start_docker_api.sh
  ```
- 
-
 
 ## User Data Management
 User data management enables the gamification aspect of the cyber range with a score board displaying the scores of the other players in order motivate the trainees to engage well in the training. 
@@ -80,25 +78,46 @@ User data management enables the gamification aspect of the cyber range with a s
   <img src="./images/Scoreboard.png" width="300" />
 </p>
 Furthermore, storing the progress of each user in a central database enables the trainer to monitor the conduction of the training and facilitates to evaluate the training after conduction. 
-Every trainee is assigned the following attributes.
+Every trainee initially needs to be assigned the following attributes.
 
- - ID
- - username
- - round
+ - **userID**: randomly chosen ID to log into the cyber range, primary key of the Firestore Collection
+ - **username**: each userID is assigned a username. This is is displayed on the scoreboard
+ - **round**: refers to the round of conduction of the cyber range training. The trainee will only see the scores of the players that are playing in the same round as he or she does
  
-(E.g. ID: 5328, userName: VisualVeronica, round: 1). **ID** is randomly chosen and used to log into the cyber range, whilst the **username** will be displayed on the scoreboard. **Round** refers to the round of conduction of the cyber range training. The trainee will only see the scores of the players that are playing in the same round as he or she does.
+While taking part in the cyber range training, furthermore, the following data is recorded:
+
+- points: current score of the trainee (out of a maximum score of 101)
+- level: number of tasks the trainee has completed
+- startTime: timestamp when the trainee first loged into the cyber range
+- taskTimes: time the trainee took to solve a task
 
 
 ### Create Firestore Collection
-- Within a Firebase project create **Firestore collection named "cyberrangeDashboard"** as described [here](https://firebase.google.com/docs/firestore/quickstart)
-- To link the cyber range to your collection copy the **firebaseConfig** object from the firebase console (Settings -> General) as described [here](https://firebase.google.com/docs/web/setup#config-object) and add it to the configruation file [firebase.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/firebase.js)
-### Create usernames and IDs
-- username/ID combination
-- add IDs to the frontend in [usernames.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/data/usernames.js)
-- Now either add the user data manually to the Firestore collection or use the python scripts described in the next section to import user data from a csv file to the Firestore collection
+- Within a Firebase project create **Firestore collection named "cyberrangeDashboard"** as described [here](https://firebase.google.com/docs/firestore/quickstart).
+- To link the cyber range to your collection copy the **firebaseConfig** object from the firebase console (Settings -> General) as described [here](https://firebase.google.com/docs/web/setup#config-object) and add it to the configruation file [firebase.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/firebase.js).
+- 
+### Create user data
+- Create a list containing the user data with a tuple of userID, username and round
+
+| userID        | username           | round  |
+| ------------- |:-------------:| -----:|
+|	7683	|	SudoSven	|	1	|
+|	1235	|	SecuritySandra	|	1	|
+|	2364	|	RootRuth	|	1	|
+|	2346	|	Crewmate	|	2	|
+|	5671	|	AnonymousAnna	|	2	|
+|	2397	|	MrsRobot	|	2	|
+
+*This example user data set provides user data for two rounds of training with three trainees each.*
+
+- Add all valid userIDs to the [usernames.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/data/usernames.js) file in the frontend project. *For the previous example this would be adding userIDs 7683, 1235, 2364, 2346, 5671	and 2397.*
+- Either add the user data manually to the Firestore collection or use the provided python [scripts](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/FirebaseScripts) as described in the next section to import user data from a csv file to the Firestore collection.
 
 ### Import and export of user data with .csv files
-- upload csv with ID, username and round to Firestore
-- create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
+- Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
 - Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/FirebaseScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
-- export user data similar to that
+- Replace the sample user data in userdata.csv with your user data sets
+- Run import script:
+```bash
+python3 importFromCsv.py
+ ```
