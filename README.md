@@ -31,7 +31,7 @@ bash init_cyberrange.sh
  - Access the cyber range on **port 7080**: `http://192.168.2.54:7080`
  - to get an idea of the prototype, you can use the demo user (without user data management) **ID=127**
  - Bild von cyber range startseite und 127
- - If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with User Data Manegemnt
+ - If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
 ## Run and stop the cyber range infrastructure
 
 - To restart the infrastructure you can either run the startup script
@@ -51,3 +51,4 @@ bash docker_stop.sh
 
   or use the API-functionality `http://192.168.2.54:9090/stop_cr`
  
+## User Data Management
