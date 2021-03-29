@@ -24,7 +24,7 @@ A **firewall** is running on the HMI capturing selected TCP traffic and detectin
 - if an unknown ip address is detected in the network 
 - if the response to an ARP-request is ambiguous (duplicate ip address configured)
 
-The functionalities of the firewall are implemented with [Flask](https://flask.palletsprojects.com/en/1.1.x/) in [tcp_capture.py](./tcp_capture.py) and [firewall.py](./firewall.py)
+The functionalities of the firewall are implemented with [Scapy](https://scapy.net/) in [tcp_capture.py](./tcp_capture.py) and [firewall.py](./firewall.py)
 
 Additionally, each PLC produces a warning log, when its log file was removed and therefore needs to be newly created.
 
