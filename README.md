@@ -1,17 +1,24 @@
-**DigitalTwinSocCyberrange** is a research project by the University of Regensburg and the Ionian University. This prototype aims to provide training for SOC analysts in a highly realisitic scenario making use of the simulation component of the digital twin of an industrial filling plant. In the scenario an attacker has gained access to the industrial system and performs various attacks (Man-In-The-Middle-Attack, Log-File-Manipulation-Attack and Denial-Of-Service-Attack) to disrupt the filling plant. The components of the industrial system thereby produce log data which are forwarded to a SIEM system. Completing the tasks of the cyber range, a trainee gains knowledge about the selected attacks on the industrial system and how to detect these attacks in a SIEM system by creating correlation rules.
+# DigitalTwinSocCyberrange
+**DigitalTwinSocCyberrange** is a research project by the University of Regensburg and the Ionian University. This prototype aims to provide training for SOC analysts in a highly realistic scenario making use of the simulation component of the digital twin of an industrial filling plant. In the scenario, an attacker has gained access to the industrial system and performs various attacks (Man-In-The-Middle-Attack, Log-File-Manipulation-Attack and Denial-Of-Service-Attack) to disrupt the filling plant. The components of the industrial system thereby produce log data which are forwarded to a SIEM system. Completing the tasks of the cyber range, a trainee gains knowledge about the selected attacks on the industrial system and how to detect these attacks in a SIEM system by creating correlation rules.
 The following video gives an introduction to the project and the learning concept of the cyber range.
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6czq4r2_kTk
 " target="_blank"><img src="./images/Video3.png" 
 alt="Introduction" width="500" border="2" corder-color="black" /></a> </p> 
 
+**Frontend of the cyber range:**
+
+![Cyberrange_Learning](https://user-images.githubusercontent.com/56884203/112633883-3302c900-8e3a-11eb-9ed7-7d9406a4b715.png)
+
+
 The concept was evaluated in an extensive **user study**. The results of the user study are presented in the [userStudy repository](https://github.com/DigitalTwinSocCyberrange/userStudy). 
 
+
 ## Architecture of the prototype
-- The **Virtual Environment** consists of the simulation component of a Digital Twin which is tailored to the needs of the cyber range scenario. It is implemented with [MiniCPS](https://github.com/scy-phy/minicps), an academic framework for simulating cyber-physical systems which builds upon [Mininet](http://mininet.org). The simualted attacks are performed with [Ettercap](https://www.ettercap-project.org/) and [hping](http://www.hping.org/). The firewall functionalities are implemeted with [Scapy](https://scapy.net/).
+- The **Virtual Environment** consists of the simulation component of a Digital Twin which is tailored to the needs of the cyber range scenario. It is implemented with [MiniCPS](https://github.com/scy-phy/minicps), an academic framework for simulating cyber-physical systems which builds upon [Mininet](http://mininet.org). The simulated attacks are performed with [Ettercap](https://www.ettercap-project.org/) and [hping](http://www.hping.org/). The firewall functionalities are implemented with [Scapy](https://scapy.net/).
 - The **SIEM** system is realized with [Dsiem](https://www.dsiem.org/), which builds upon [Filebeat, Elasticsearch, Logstash and Kibana](https://www.elastic.co/).
  
-The Digital Twin Simulation and the SIEM system of the prototype is based on a microservice architecture consisting of **Docker Containers**. 
+The Digital Twin Simulation and the SIEM system of the prototype are based on a microservice architecture realized with **Docker Containers**. 
 
 - The **Learning Management System (LMS)** is implemented with the JavaScript Framework [Vue.js](https://vuejs.org/). The respective source code is stored in the [frontendCyberrange](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange) repository of the project.
 - A **[REST-API]((https://github.com/DigitalTwinSocCyberrange/DigitalTwinCyberrange/tree/main/src/pyrest))** implemented with [Flask](https://flask.palletsprojects.com/en/1.1.x/) connects the LMS, the Digital Twin and the SIEM-System
@@ -46,7 +53,8 @@ bash setup_python.sh
 cd deployments/docker && \
 bash init_cyberrange.sh
  ```
-- Enter the ip address or hostname where the cyberrange should be deployed. Usually this is either the default ip address of the maschine or localhost. 199.999.9.99 is used as an example ip address here.
+- Enter the ip address or hostname where the cyber range should be deployed. Usually, th
+either the default ip address of the maschine or localhost. 199.999.9.99 is used as an example ip address here.
 
 ```bash
 Enter the Hostname or IP Address where the cyber range will be deployed: 199.999.9.99
@@ -82,14 +90,14 @@ Furthermore, storing the progress of each user in a central database enables the
 Every trainee initially needs to be assigned the following attributes.
 
  - **userID**: randomly chosen ID to log into the cyber range, primary key of the Firestore Collection
- - **username**: each userID is assigned a username. This is is displayed on the scoreboard
+ - **username**: each userID is assigned a username. This is displayed on the scoreboard
  - **round**: refers to the round of conduction of the cyber range training. The trainee will only see the scores of the players that are playing in the same round as he or she does
  
 While taking part in the cyber range training, furthermore, the following data is recorded:
 
 - points: current score of the trainee (out of a maximum score of 101)
 - level: number of tasks the trainee has completed
-- startTime: timestamp when the trainee first loged into the cyber range
+- startTime: timestamp when the trainee first logged in
 - taskTimes: time the trainee took to solve a task
 
 
