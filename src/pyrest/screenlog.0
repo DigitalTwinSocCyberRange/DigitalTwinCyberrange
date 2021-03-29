@@ -150,3 +150,50 @@ socket.error: [Errno 98] Address already in use
 [2m   Use a production WSGI server instead.[0m
  * Debug mode: off
  * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+185.220.101.194 - - [29/Mar/2021 11:38:52] "[33mGET / HTTP/1.1[0m" 404 -
+/bin/bash: kbndashboard-import.sh: No such file or directory
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+ * Running on http://132.199.120.10:9090/ (Press CTRL+C to quit)
+132.199.120.10
+[33m * Tip: There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.[0m
+ * Serving Flask app "api" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: off
+Traceback (most recent call last):
+  File "api.py", line 81, in <module>
+    app.run(port=9090, host=ip_vm)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1052, in run_simple
+    inner()
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 1005, in inner
+    fd=fd,
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 848, in make_server
+    host, port, app, request_handler, passthrough_errors, ssl_context, fd=fd
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 740, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python2.7/SocketServer.py", line 420, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib/python2.7/SocketServer.py", line 434, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use

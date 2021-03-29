@@ -43889,3 +43889,38 @@ setting default index to siem_alarms ..done
 dashboard installed successfully.
 Installing index pattern siem-alarm_events from ../kibana/idxpattern-siem_alarm_events.json .. curl: (22) The requested URL returned error: 409 Conflict
 failed to install, perhaps object already exist?
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (7) Failed to connect to localhost port 5605: Connection refused
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (22) The requested URL returned error: 503 Service Unavailable
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+installing kibana dashboard to localhost:5605 ..done.
+setting default index to siem_alarms ..done
+dashboard installed successfully.
+Installing index pattern siem-alarm_events from ../kibana/idxpattern-siem_alarm_events.json .. curl: (22) The requested URL returned error: 409 Conflict
+failed to install, perhaps object already exist?

@@ -33,14 +33,14 @@ def restart():
 @app.route('/stop_cr',methods=['GET'])
 @cross_origin()
 def compose():
-    result_success = subprocess.check_output("bash ./../../deployments/docker/docker_stop.sh &>/dev/null", shell=True);
+    result_success = subprocess.check_output("bash stop.sh &>/dev/null", shell=True);
     return "successfully shut down cyber range infrastructure";
 
 @app.route('/start_cr',methods=['GET'])
 @cross_origin()
 def docker():
-    result_success = subprocess.check_output("bash ./../../deployments/docker/start_docker_api.sh &>/dev/null", shell=True)
-    return "successfully (re)started cyber range infrastructure";
+    result_success = subprocess.check_output("bash restart.sh &>/dev/null", shell=True)
+    return "successfully started cyber range infrastructure";
 
 @app.route('/attacker',methods=['GET'])
 @cross_origin()

@@ -2,7 +2,6 @@
 #echo "HOST_IP=$ip" > .env
 #uncomment if interface for cyber range is known to retrieve ip address automatically
 
-cd /root/DigitalTwinCyberrange/deployments/docker
 #restart docker containers
 pkill screen
 docker-compose stop 
