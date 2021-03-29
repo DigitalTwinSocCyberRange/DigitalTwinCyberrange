@@ -26,9 +26,8 @@ The Digital Twin Simulation and the SIEM system of the prototype are based on a 
 - The user data is stored in a Firestore collection, described in detail [here](#user-data-management)
 
  <p align="center">
-  <img src="https://user-images.githubusercontent.com/56884203/112821589-2b842f80-9087-11eb-840b-7918320592af.png" />
+  <img src="https://user-images.githubusercontent.com/56884203/112836327-bb7fa480-909a-11eb-85bc-8307505d52f4.png" />
 </p>
-
 
 ## Installation (for Ubuntu 20.04)
 
@@ -109,7 +108,7 @@ While taking part in the cyber range training, furthermore, the following data i
 - 
 ### Create user data
 - Create a list containing the user data with a tuple of userID, username and round
-
+ 
 | userID        | username           | round  |
 | ------------- |:-------------:| -----:|
 |	7683	|	SudoSven	|	1	|
@@ -118,6 +117,7 @@ While taking part in the cyber range training, furthermore, the following data i
 |	2346	|	Crewmate	|	2	|
 |	5671	|	AnonymousAnna	|	2	|
 |	2397	|	MrsRobot	|	2	|
+
 
 *This example user data set provides user data for two rounds of training with three trainees each.*
 
