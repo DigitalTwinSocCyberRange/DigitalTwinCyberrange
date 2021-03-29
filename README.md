@@ -7,7 +7,7 @@ The following video gives an introduction to the project and the learning concep
 alt="Introduction" width="500" border="2" corder-color="black" /></a> </p> 
 
 
-**Frontend of the cyber range:**
+**User interface of the cyber range:**
 
 ![Cyberrange_Learning](https://user-images.githubusercontent.com/56884203/112633883-3302c900-8e3a-11eb-9ed7-7d9406a4b715.png)
 
@@ -16,7 +16,7 @@ The concept was evaluated in an extensive **user study**. The results of the use
 
 
 ## Architecture of the prototype
-- The **Virtual Environment** consists of the simulation component of a Digital Twin which is tailored to the needs of the cyber range scenario. It is implemented with [MiniCPS](https://github.com/scy-phy/minicps), an academic framework for simulating cyber-physical systems which builds upon [Mininet](http://mininet.org). The simulated attacks are performed with [Ettercap](https://www.ettercap-project.org/) and [hping](http://www.hping.org/). The firewall functionalities are implemented with [Scapy](https://scapy.net/).
+- The **Virtual Environment** consists of the simulation component of a [Digital Twin](./src) which is tailored to the needs of the cyber range scenario. It is implemented with [MiniCPS](https://github.com/scy-phy/minicps), an academic framework for simulating cyber-physical systems which builds upon [Mininet](http://mininet.org). The simulated attacks are performed with [Ettercap](https://www.ettercap-project.org/) and [hping](http://www.hping.org/). The firewall functionalities are implemented with [Scapy](https://scapy.net/).
 - The **SIEM** system is realized with [Dsiem](https://www.dsiem.org/), which builds upon [Filebeat, Elasticsearch, Logstash and Kibana](https://www.elastic.co/).
  
 The Digital Twin Simulation and the SIEM system of the prototype are based on a microservice architecture realized with **Docker Containers**. 
@@ -122,11 +122,11 @@ While taking part in the cyber range training, furthermore, the following data i
 *This example user data set provides user data for two rounds of training with three trainees each.*
 
 - Add all valid userIDs to the [usernames.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/data/usernames.js) file in the frontend project. *For the previous example this would be adding userIDs 7683, 1235, 2364, 2346, 5671	and 2397.*
-- Either add the user data manually to the Firestore collection or use the provided python [scripts](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/FirebaseScripts) as described in the next section to import user data from a csv file to the Firestore collection.
+- Either add the user data manually to the Firestore collection or use the provided python [scripts](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts) as described in the next section to import user data from a csv file to the Firestore collection.
 
 ### Import and export of user data with .csv files
 - Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
-- Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/FirebaseScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
+- Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
 - Replace the sample user data in [userdata.csv](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts/usernames.csv) with your user data sets
 - Run import script:
 ```bash
