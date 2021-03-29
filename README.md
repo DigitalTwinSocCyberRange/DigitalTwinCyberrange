@@ -3,8 +3,9 @@
 The following video gives an introduction to the project and the learning concept of the cyber range.
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6czq4r2_kTk
-" target="_blank"><img src="./images/Video3.png" 
+" target="_blank"><img src="https://user-images.githubusercontent.com/56884203/112821430-fd065480-9086-11eb-9498-ed027142e340.png" 
 alt="Introduction" width="500" border="2" corder-color="black" /></a> </p> 
+
 
 **Frontend of the cyber range:**
 
@@ -25,7 +26,7 @@ The Digital Twin Simulation and the SIEM system of the prototype are based on a 
 - The user data is stored in a Firestore collection, described in detail [here](#user-data-management)
 
  <p align="center">
-  <img src="./images/Technologies.jpg" />
+  <img src="https://user-images.githubusercontent.com/56884203/112821589-2b842f80-9087-11eb-840b-7918320592af.png" />
 </p>
 
 
@@ -61,7 +62,7 @@ Enter the Hostname or IP Address where the cyber range will be deployed: 199.999
 ```
  - Access the cyber range on port 7080: **ht<span>tp://</span>199.999.9.99:7080**, to get an idea of the prototype, you can use the demo user (without user data management) **ID=127**
  <p align="center">
-  <img src="./images/Login.png" width="500" />
+  <img src="https://user-images.githubusercontent.com/56884203/112821652-3e96ff80-9087-11eb-805f-aee2533ac3d7.png" width="500" />
 </p>
 
  - If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
@@ -84,8 +85,9 @@ bash start_docker_api.sh
 ## User Data Management
 User data management enables the gamification aspect of the cyber range with a score board displaying the scores of the other players in order motivate the trainees to engage well in the training. 
  <p align="center">
-  <img src="./images/Scoreboard.png" width="300" />
+  <img src="https://user-images.githubusercontent.com/56884203/112821702-4fe00c00-9087-11eb-82bd-ca8c09e51f73.png" width="300" />
 </p>
+
 Furthermore, storing the progress of each user in a central database enables the trainer to monitor the conduction of the training and facilitates to evaluate the training after conduction. 
 Every trainee initially needs to be assigned the following attributes.
 
