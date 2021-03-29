@@ -31,7 +31,7 @@ The Digital Twin Simulation and the SIEM system of the prototype are based on a 
 
 ## Installation (for Ubuntu 20.04)
 
-- Install Docker-Compose as described here: https://docs.docker.com/compose/install/
+- Install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker-Compose](https://docs.docker.com/compose/install/) as described in the respective docs
 - Clone the required repositories:
 ```bash
 git clone git@github.com:DigitalTwinSocCyberrange/DigitalTwinCyberrange.git && \
