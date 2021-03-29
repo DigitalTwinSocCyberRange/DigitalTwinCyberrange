@@ -1,4 +1,4 @@
-# DigitalTwin: Simulation of a filling-plant
+# Digital Twin Simulation: the filling-plant scenario
 
 The following describes the Digital Twin Simulation of the **DigitalTwinSocCyberrange** prototype. The simulation component represents a filling-plant, consisting of three PLCs (PLC1, PLC2, PLC3), an HMI, an attacker (that has maliciously entered the network) that are connected by a switch.
 
