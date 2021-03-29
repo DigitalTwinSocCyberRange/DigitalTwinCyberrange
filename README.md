@@ -1,10 +1,11 @@
-# DigitalTwinCyberrange
-**DigitalTwinSocCyberrange** is a research project by the University of Regensburg and the Ionian University. This prototype aims to provide training for SOC analysts in a highly realisitic environment making use of the simulation component of the digital twin of an industrial filling plant. The concept was evaluated in an extensive user study. The results of the user study are presented in the [userStudy repository](https://github.com/DigitalTwinSocCyberrange/userStudy). The following video gives an introduction to the project and the learning concept of the cyber range.
-
+**DigitalTwinSocCyberrange** is a research project by the University of Regensburg and the Ionian University. This prototype aims to provide training for SOC analysts in a highly realisitic scenario making use of the simulation component of the digital twin of an industrial filling plant. In the scenario an attacker has gained access to the industrial system and performs various attacks (Man-In-The-Middle-Attack, Log-File-Manipulation-Attack and Denial-Of-Service-Attack) to disrupt the filling plant. The components of the industrial system thereby produce log data which are forwarded to a SIEM system. Completing the tasks of the cyber range, a trainee gains knowledge about the selected attacks on the industrial system and how to detect these attacks in a SIEM system by creating correlation rules.
+The following video gives an introduction to the project and the learning concept of the cyber range.
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=6czq4r2_kTk
 " target="_blank"><img src="./images/Video3.png" 
 alt="Introduction" width="500" border="2" corder-color="black" /></a> </p> 
+
+The concept was evaluated in an extensive **user study**. The results of the user study are presented in the [userStudy repository](https://github.com/DigitalTwinSocCyberrange/userStudy). 
 
 ## Architecture of the prototype
 - The **Virtual Environment** consists of the simulation component of a Digital Twin which is tailored to the needs of the cyber range scenario. It is implemented with [MiniCPS](https://github.com/scy-phy/minicps), an academic framework for simulating cyber-physical systems which builds upon [Mininet](http://mininet.org). The simualted attacks are performed with [Ettercap](https://www.ettercap-project.org/) and [hping](http://www.hping.org/). The firewall functionalities are implemeted with [Scapy](https://scapy.net/).
@@ -13,7 +14,7 @@ alt="Introduction" width="500" border="2" corder-color="black" /></a> </p>
 The Digital Twin Simulation and the SIEM system of the prototype is based on a microservice architecture consisting of **Docker Containers**. 
 
 - The **Learning Management System (LMS)** is implemented with the JavaScript Framework [Vue.js](https://vuejs.org/). The respective source code is stored in the [frontendCyberrange](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange) repository of the project.
-- The Digital Twin Simulation, the SIEM-System and the LMS are connected with an **[REST-API]((https://github.com/DigitalTwinSocCyberrange/DigitalTwinCyberrange/tree/main/src/pyrest))** implemented with [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- A **[REST-API]((https://github.com/DigitalTwinSocCyberrange/DigitalTwinCyberrange/tree/main/src/pyrest))** implemented with [Flask](https://flask.palletsprojects.com/en/1.1.x/) connects the LMS, the Digital Twin and the SIEM-System
 - The user data is stored in a Firestore collection, described in detail [here](#user-data-management)
 
  <p align="center">
