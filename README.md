@@ -31,40 +31,39 @@ The Digital Twin Simulation and the SIEM system of the prototype are based on a 
 
 ## Installation (for Ubuntu 20.04)
 
-- Install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker-Compose](https://docs.docker.com/compose/install/) as described in the respective docs
-- Clone the required repositories:
+1. Install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker-Compose](https://docs.docker.com/compose/install/) as described in the respective docs
+2. Clone the required repositories:
 ```bash
 git clone git@github.com:DigitalTwinSocCyberrange/DigitalTwinCyberrange.git && \
 git clone git@github.com:DigitalTwinSocCyberrange/frontendCyberrange.git
  ```
- - **Install dependencies for deployment of the frontend:**
+ 3. **Install dependencies for deployment of the frontend:**
 ```bash
 cd frontendCyberrange && \
 bash setup_frontend.sh
  ```
 
-- **Install dependencies for deployment of the Flask-Api:**
+4. **Install dependencies for deployment of the Flask-Api:**
 ```bash
 cd DigitalTwinCyberrange && \
 bash setup_python.sh
  ```
-- **Setup and start the cyber range**: This will start the microservice-infrastructure (Elasticsearch, Filebeat, Logstash, Kibana, Dsiem and Digital Twin), the cyber range frontend (running on port 7080) and the API that connects both
+5. **Setup and start the cyber range**: This will start the microservice-infrastructure (Elasticsearch, Filebeat, Logstash, Kibana, Dsiem and Digital Twin), the cyber range frontend (running on port 7080) and the API that connects both
 ```bash
 cd deployments/docker && \
 bash init_cyberrange.sh
  ```
-- Enter the ip address or hostname where the cyber range should be deployed. Usually, th
-either the default ip address of the maschine or localhost. 199.999.9.99 is used as an example ip address here.
+6. Enter the ip address or hostname where the cyber range should be deployed. Usually, this is either the default ip address of the maschine or localhost. 199.999.9.99 is used as an example ip address here.
 
 ```bash
 Enter the Hostname or IP Address where the cyber range will be deployed: 199.999.9.99
 ```
- - Access the cyber range on port 7080: **ht<span>tp://</span>199.999.9.99:7080**, to get an idea of the prototype, you can use the demo user (without user data management) **ID=127**
+ 7. Access the cyber range on port 7080: **ht<span>tp://</span>199.999.9.99:7080**. To get an idea of the prototype, you can use the demo user (without user data management) **ID=127**
  <p align="center">
   <img src="https://user-images.githubusercontent.com/56884203/112821652-3e96ff80-9087-11eb-805f-aee2533ac3d7.png" width="500" />
 </p>
 
- - If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
+ 8. If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
 ## Shutdown
 To shut down the infrastructure you can either the use the API-functionality **ht<span>tp://</span>199.999.9.99:9090/stop_cr** or run the shutdown script:
  
@@ -82,7 +81,7 @@ bash start_docker_api.sh
  ```
 
 ## User Data Management
-User data management enables the gamification aspect of the cyber range with a score board displaying the scores of the other players in order motivate the trainees to engage well in the training. 
+User data management enables the gamification aspect of the cyber range with a score board displaying the scores of the other players in order to motivate the trainees to engage well in the training. 
  <p align="center">
   <img src="https://user-images.githubusercontent.com/56884203/112821702-4fe00c00-9087-11eb-82bd-ca8c09e51f73.png" width="300" />
 </p>
@@ -92,9 +91,9 @@ Every trainee initially needs to be assigned the following attributes.
 
  - **userID**: randomly chosen ID to log into the cyber range, primary key of the Firestore Collection
  - **username**: each userID is assigned a username. This is displayed on the scoreboard
- - **round**: refers to the round of conduction of the cyber range training. The trainee will only see the scores of the players that are playing in the same round as he or she does
+ - **round**: refers to the round (or the group) of conduction of the cyber range training. The trainee will only see the scores of the players that are playing in the same round as he or she does
  
-While taking part in the cyber range training, furthermore, the following data is recorded:
+While taking part in the cyber range training the following data is recorded:
 
 - points: current score of the trainee (out of a maximum score of 101)
 - level: number of tasks the trainee has completed
@@ -103,11 +102,10 @@ While taking part in the cyber range training, furthermore, the following data i
 
 
 ### Create Firestore Collection
-- Within a Firebase project create **Firestore collection named "cyberrangeDashboard"** as described [here](https://firebase.google.com/docs/firestore/quickstart).
-- To link the cyber range to your collection copy the **firebaseConfig** object from the firebase console (Settings -> General) as described [here](https://firebase.google.com/docs/web/setup#config-object) and add it to the configruation file [firebase.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/firebase.js).
-- 
+1. Within a Firebase project create a **Firestore collection named "cyberrangeDashboard"** as described [here](https://firebase.google.com/docs/firestore/quickstart).
+2. To link the cyber range to your collection copy the **firebaseConfig** object from the firebase console (Settings -> General) as described [here](https://firebase.google.com/docs/web/setup#config-object) and add it to the configruation file [firebase.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/firebase.js).
 ### Create user data
-- Create a list containing the user data with a tuple of userID, username and round
+1. Create a list containing the user data with a tuple of userID, username and round
  
 | userID        | username           | round  |
 | ------------- |:-------------:| -----:|
@@ -121,19 +119,19 @@ While taking part in the cyber range training, furthermore, the following data i
 
 *This example user data set provides user data for two rounds of training with three trainees each.*
 
-- Add all valid userIDs to the [usernames.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/data/usernames.js) file in the frontend project. *For the previous example this would be adding userIDs 7683, 1235, 2364, 2346, 5671	and 2397.*
-- Either add the user data manually to the Firestore collection or use the provided python [scripts](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts) as described in the next section to import user data from a csv file to the Firestore collection.
+2. Add all valid userIDs to the [usernames.js](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/src/data/usernames.js) file in the frontend project. *For the previous example this would be adding userIDs 7683, 1235, 2364, 2346, 5671	and 2397.*
+3. Either add the user data manually to the Firestore collection or use the provided python [scripts](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts) as described in the next section to import user data from a csv file to the Firestore collection.
 
 ### Import and export of user data with .csv files
-- Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
-- Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
-- Replace the sample user data in [userdata.csv](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts/usernames.csv) with your user data sets
-- Run import script:
+1. Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
+2. Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
+3. Replace the sample user data in [userdata.csv](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts/usernames.csv) with your user data sets
+4. Run import script:
 ```bash
 cd frontendCyberrange/userDataScripts && \
 python3 importFromCsv.py
  ```
- - To export user data (points, level, times) after the training, run:
+*To export user data (points, level, times) after the training, run:*
  
  ```bash
 cd frontendCyberrange/userDataScripts && \
