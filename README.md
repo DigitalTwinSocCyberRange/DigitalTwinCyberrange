@@ -137,3 +137,5 @@ python3 importFromCsv.py
 cd frontendCyberrange/userDataScripts && \
 python3 exportToCsv.py
  ```
+## Research and Citation
+Please consider citing our [DBSec'21](https://doi.org/10.1007/978-3-030-81242-3_17) publication when using the **DigitalTwinSocCyberrange** for your research.
