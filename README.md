@@ -139,3 +139,8 @@ python3 exportToCsv.py
  ```
 ## Research and Citation
 Please consider citing our [DBSec'21](https://doi.org/10.1007/978-3-030-81242-3_17) publication when using the **DigitalTwinSocCyberrange** for your research.
+
+### Conference presentation
+<p align="center">
+<a href="https://www.youtube.com/watch?v=MSkmycU0lWk" target="_blank"><img src="https://img.youtube.com/vi/MSkmycU0lWk/0.jpg" 
+alt="Conference presentation" width="500" border="2" corder-color="black" /></a> </p> 
