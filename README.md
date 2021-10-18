@@ -64,6 +64,22 @@ Enter the Hostname or IP Address where the cyber range will be deployed: 199.999
 </p>
 
  8. If you want to conduct a cyber range training with multiple participants and use the scoreboard, please proceed with [User Data Management](#user-data-management)
+
+## Frontend only installation (Windows, MacOS)
+To install only the frontend (e.g. for development) on Windows or MacOS, download the latest version of https://nodejs.org/en/[nodejs]. 
+
+1. Replace the demo code in firebase.js with the credentials of your own firebase database.
+
+2. In the **frontendCyberrange** directory, run  ```bash
+npm install
+ ```
+ followed by
+ 
+  ```bash
+npm run serve
+ ```
+ The frontend then runs on port 7080 of localhost
+
 ## Shutdown
 To shut down the infrastructure you can either the use the API-functionality **ht<span>tp://</span>199.999.9.99:9090/stop_cr** or run the shutdown script:
  
