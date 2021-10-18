@@ -70,7 +70,9 @@ To install only the frontend (e.g. for development) on Windows or MacOS, downloa
 
 1. Replace the demo code in firebase.js with the credentials of your own firebase database.
 
-2. In the **frontendCyberrange** directory, run  ```bash
+2. In the **frontendCyberrange** directory, run  
+
+```bash
 npm install
  ```
  followed by
