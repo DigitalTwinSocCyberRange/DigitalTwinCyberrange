@@ -144,7 +144,11 @@ While taking part in the cyber range training the following data is recorded:
 1. Create a Service Account on Firebase. This can be done on the Firebase Dashboard via Settings -> Service Account -> "Generate Private Key" as described [here]( https://firebase.google.com/docs/admin/setup#python)
 2. Replace the file [serviceAccount.json](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/blob/main/userDataScripts/serviceAccount.json) with your created key (also naming it serviceAccount.json)
 3. Replace the sample user data in [userdata.csv](https://github.com/DigitalTwinSocCyberrange/frontendCyberrange/tree/main/userDataScripts/usernames.csv) with your user data sets
-4. Run import script:
+4. Install firebase package
+```bash
+sudo pip install firebase-admin
+ ```
+5. Run import script:
 ```bash
 cd frontendCyberrange/userDataScripts && \
 python3 importFromCsv.py
