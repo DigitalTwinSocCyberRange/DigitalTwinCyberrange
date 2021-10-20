@@ -13,8 +13,6 @@ RUN apt-get install -y sudo \
     && /mininet/util/install.sh -a \
     && pip install cpppo==4.3.4 \
     && pip install minicps \
-    && pip install flask \
-    && pip install flask_cors \
     && apt-get install -y ettercap-common \
     && apt-get install -y hping3 \
     && chmod +x ./start.sh
