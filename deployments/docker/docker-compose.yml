@@ -102,6 +102,14 @@ services:
       - ../../src:/src
     depends_on:
         - filebeat
+  
+  graphql_log_api:
+    build: ../../graphql_log_api
+    container_name: graphql_log_api
+    ports:
+      - 4000:4000
+    volumes: 
+      - digital-twin-log:/logs 
 
 volumes:
   filebeat-es-data:
