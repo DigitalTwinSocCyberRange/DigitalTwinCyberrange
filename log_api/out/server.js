@@ -19,12 +19,12 @@ const read_last_lines_1 = __importDefault(require("read-last-lines"));
 // run().catch(err => console.log(err));
 class ExpressServer {
     constructor() {
-        this.app = (0, express_1.default)();
         this.logfiles = ['/logs/plc1.log', '/logs/plc2.log', '/logs/plc3.log'];
     }
     start() {
         console.log('starting...');
-        this.app.get('/events', (req, res) => __awaiter(this, void 0, void 0, function* () {
+        let app = (0, express_1.default)();
+        app.get('/events', (req, res) => __awaiter(this, void 0, void 0, function* () {
             console.log('Got /events');
             res.set({
                 'Cache-Control': 'no-cache',
@@ -34,15 +34,14 @@ class ExpressServer {
             res.flushHeaders();
             // Tell the client to retry every 10 seconds if connectivity is lost
             res.write('retry: 10000\n\n');
-            let count = 0;
             this.watchFiles(this.logfiles, (lastline) => {
                 console.log(lastline);
                 this.writeLog(res, lastline);
             });
         }));
         const index = fs_1.default.readFileSync('./index.html', 'utf8');
-        this.app.get('/', (req, res) => res.send(index));
-        this.app.listen(3000);
+        app.get('/', (req, res) => res.send(index));
+        app.listen(3000);
         console.log('Listening on port 3000');
     }
     readLastLine(filename) {
