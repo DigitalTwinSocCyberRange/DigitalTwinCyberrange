@@ -5,7 +5,7 @@ import readLastLines from "read-last-lines";
 
 export class ExpressServer {
   app = express();
-  logfiles = ['./index.html', './server.js'];
+  logfiles = ['/logs/plc1.log', '/logs/plc2.log', '/logs/plc3.log'];
 
   constructor() {
 

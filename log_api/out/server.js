@@ -20,7 +20,7 @@ const read_last_lines_1 = __importDefault(require("read-last-lines"));
 class ExpressServer {
     constructor() {
         this.app = (0, express_1.default)();
-        this.logfiles = ['./index.html', './server.js'];
+        this.logfiles = ['/logs/plc1.log', '/logs/plc2.log', '/logs/plc3.log'];
     }
     start() {
         console.log('starting...');
