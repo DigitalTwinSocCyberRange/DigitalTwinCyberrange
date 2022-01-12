@@ -17,6 +17,6 @@ This is done with the following paths (again 199.999.9.99 is used as a sample ip
 
 Additionally, the API provides functionalities for the trainer to manage the cyber range training:
 
-- **199.999.9.99:9090/cr_stop** to stop and reset the microservice infrastructure and the frontend of the cyber range 
-- **199.999.9.99:9090/cr_start** to restart the microservice infrastructure and the frontend
+- **199.999.9.99:9090/stop_cr** to stop and reset the microservice infrastructure and the frontend of the cyber range 
+- **199.999.9.99:9090/start_cr** to restart the microservice infrastructure and the frontend
 - **199.999.9.99:9090/restart_dt** to restart the digital twin simulation
