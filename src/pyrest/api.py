@@ -72,6 +72,17 @@ def arp():
     result_success = subprocess.check_output("bash activate_directive.sh arp", shell=True)
     return "ok";
 
+@app.route('/pull_frontend',methods=['GET'])
+@cross_origin()
+def pull_frontend():
+    result_success = subprocess.check_output("bash git_pull_frontend.sh", shell=True)
+    return "pulled frontendend from git"
+
+@app.route('/pull_backend',methods=['GET'])
+@cross_origin()
+def pull_backend():
+    result_success = subprocess.check_output("bash git_pull_backend.sh", shell=True)
+    return "pulled backend from git"
 
 
 ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).decode("utf-8").rstrip();
