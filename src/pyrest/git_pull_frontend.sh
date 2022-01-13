@@ -1,0 +1,2 @@
+cd ../../../frontendCyberrange
+git pull

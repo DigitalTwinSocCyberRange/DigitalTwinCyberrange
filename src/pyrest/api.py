@@ -21,7 +21,7 @@ def submit(submit_data):
 @app.route('/deactivate_directives',methods=['GET'])
 @cross_origin()
 def deactivate():
-    result_success = subprocess.check_output("bash deactivate.sh", shell=True);
+    result_success = subprocess.check_output("bash deactivate_directives.sh", shell=True);
     return "deactivated directives";
    
 @app.route('/restart_dt',methods=['GET'])
@@ -89,6 +89,6 @@ ip_vm = subprocess.check_output("bash get_ip.sh", shell=True).decode("utf-8").rs
 print(ip_vm)
 #ip_vm=ipaddress.IPv4Address(ip_vm)
 
-app.run(port=9090, host=ip_vm)
+app.run(port=9090, host="0.0.0.0")
 
 
