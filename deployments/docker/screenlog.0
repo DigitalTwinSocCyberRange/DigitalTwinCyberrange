@@ -46468,3 +46468,125 @@ installing kibana dashboard to localhost:5605 ..done.
 setting default index to siem_alarms ..done
 dashboard installed successfully.
 Installing index pattern siem-alarm_events from ../kibana/idxpattern-siem_alarm_events.json .. done
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (52) Empty reply from server
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
+curl: (56) Recv failure: Connection reset by peer
+cannot connect to localhost:5605, will retry in 5 sec ..
