@@ -10,6 +10,7 @@ openflow/
 pox/
 src/fp_db.sqlite
 src/pyrest/screenlog.0
+deployments/docker/screenlog.0
 dsiem_backup/
 dsiem/docs/mkdocs
 dsiem/docs/TODO.md
