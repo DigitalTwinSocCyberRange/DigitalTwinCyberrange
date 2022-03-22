@@ -9,7 +9,7 @@ RUN apt-get install -y sudo \
     && apt-get install -y net-tools \
     && apt-get install -y git \ 
     && apt-get install -y screen \
-    && git clone git://github.com/mininet/mininet \
+    && git clone https://github.com//mininet/mininet \
     && /mininet/util/install.sh -a \
     && pip install cpppo==4.3.4 \
     && pip install minicps \
