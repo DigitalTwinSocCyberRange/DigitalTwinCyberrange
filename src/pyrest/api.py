@@ -36,7 +36,7 @@ def compose():
     result_success = subprocess.check_output("bash stop.sh &>/dev/null", shell=True);
     return "successfully shut down cyber range infrastructure";
 
-@app.route('/start_cr',methods=['GET'])
+@app.route('/restart_cr',methods=['GET'])
 @cross_origin()
 def docker():
     result_success = subprocess.check_output("bash restart.sh &>/dev/null", shell=True)
